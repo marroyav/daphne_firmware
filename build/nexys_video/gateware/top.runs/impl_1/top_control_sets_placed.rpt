@@ -1,0 +1,353 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Aug 29 15:55:45 2019
+| Host         : debian running 64-bit Debian GNU/Linux 10 (buster)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a200t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   277 |
+| Unused register locations in slices containing registers |   530 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            4 |
+|      2 |            4 |
+|      3 |            1 |
+|      4 |           39 |
+|      5 |            7 |
+|      6 |            7 |
+|      7 |            6 |
+|      8 |           74 |
+|      9 |            6 |
+|     10 |            7 |
+|     12 |           11 |
+|     15 |            9 |
+|    16+ |          102 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             275 |          145 |
+| No           | No                    | Yes                    |               8 |            4 |
+| No           | Yes                   | No                     |            1375 |          518 |
+| Yes          | No                    | No                     |            1428 |          487 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            2416 |          745 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+---------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+| Clock Signal |                                              Enable Signal                                              |                             Set/Reset Signal                             | Slice Load Count | Bel Load Count |
++--------------+---------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+|  sys_clk     | serial_tx_i_1_n_0                                                                                       | sys_rst                                                                  |                1 |              1 |
+|  sys_clk     |                                                                                                         | main_soclinux_sdram_tccdcon_ready_i_1_n_0                                |                1 |              1 |
+|  clk200_clk  |                                                                                                         |                                                                          |                1 |              1 |
+|  sys_clk     | main_soclinux_sdram_tfawcon_ready_reg022_in                                                             | main_soclinux_sdram_tfawcon_ready_i_1_n_0                                |                1 |              1 |
+|  clk200_clk  |                                                                                                         | builder_xilinxasyncresetsynchronizerimpl0                                |                1 |              2 |
+|  sys_clk     |                                                                                                         | builder_xilinxasyncresetsynchronizerimpl0                                |                1 |              2 |
+|  eth_tx_clk  |                                                                                                         | main_ethphy_reset0                                                       |                1 |              2 |
+|  eth_rx_clk  |                                                                                                         | main_ethphy_reset0                                                       |                1 |              2 |
+|  sys_clk     | VexRiscv/_zz_212_                                                                                       | VexRiscv/dataCache_1_/reset0                                             |                1 |              3 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/main_soclinux_sdram_bankmachine3_cmd_buffer_lookahead_level_reg[0]_0[0] | sys_rst                                                                  |                1 |              4 |
+|  sys_clk     | builder_bankmachine2_next_state                                                                         | sys_rst                                                                  |                1 |              4 |
+|  sys_clk     | builder_bankmachine1_next_state                                                                         | sys_rst                                                                  |                3 |              4 |
+|  sys_clk     | builder_bankmachine0_next_state                                                                         | sys_rst                                                                  |                1 |              4 |
+|  sys_clk     | VexRiscv/CsrPlugin_mcause_exceptionCode[3]_i_1_n_0                                                      |                                                                          |                2 |              4 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/main_soclinux_sdram_bankmachine7_cmd_buffer_lookahead_level_reg[0]_0[0] | sys_rst                                                                  |                1 |              4 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/main_soclinux_sdram_bankmachine6_cmd_buffer_lookahead_level_reg[0]_0[0] | sys_rst                                                                  |                2 |              4 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/main_soclinux_sdram_bankmachine5_cmd_buffer_lookahead_level_reg[0]_0[0] | sys_rst                                                                  |                2 |              4 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/main_soclinux_sdram_bankmachine4_cmd_buffer_lookahead_level_reg[0][0]   | sys_rst                                                                  |                2 |              4 |
+|  sys_clk     | builder_bankmachine4_next_state                                                                         | sys_rst                                                                  |                2 |              4 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/main_soclinux_sdram_bankmachine2_cmd_buffer_lookahead_level_reg[2]_0[0] | sys_rst                                                                  |                2 |              4 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/main_soclinux_sdram_bankmachine1_cmd_buffer_lookahead_level_reg[0]_0[0] | sys_rst                                                                  |                1 |              4 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/main_soclinux_sdram_bankmachine0_cmd_buffer_lookahead_level_reg[0]_0[0] | sys_rst                                                                  |                2 |              4 |
+|  sys_clk     | VexRiscv/dataCache_1_/CsrPlugin_hadException_reg_1[0]                                                   | VexRiscv/dataCache_1_/reset0                                             |                1 |              4 |
+|  sys_clk     | VexRiscv/dataCache_1_/memory_MulDivIterativePlugin_div_counter_willClear                                | VexRiscv/dataCache_1_/stageA_request_size[0]_i_1_n_0                     |                2 |              4 |
+|  sys_clk     | main_soclinux_uart_tx_fifo_wrport_we                                                                    | sys_rst                                                                  |                1 |              4 |
+|  sys_clk     | builder_multiplexer_next_state                                                                          | sys_rst                                                                  |                3 |              4 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_hsync_start1_re                                                | sys_rst                                                                  |                1 |              4 |
+|  sys_clk     | main_soclinux_uart_phy_sink_ready1481_out                                                               | main_soclinux_uart_phy_tx_bitcount[3]_i_1_n_0                            |                1 |              4 |
+|  sys_clk     | main_soclinux_uart_phy_rx_bitcount                                                                      | main_soclinux_uart_phy_rx_bitcount[3]_i_1_n_0                            |                2 |              4 |
+|  sys_clk     | main_soclinux_sdram_time1[3]_i_1_n_0                                                                    | sys_rst                                                                  |                2 |              4 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_vsync_start1_re                                                | sys_rst                                                                  |                1 |              4 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_vsync_end1_re                                                  | sys_rst                                                                  |                1 |              4 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_vscan1_re                                                      | sys_rst                                                                  |                1 |              4 |
+|  sys_clk     | main_soclinux_uart_rx_fifo_wrport_we                                                                    | sys_rst                                                                  |                1 |              4 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_vres1_re                                                       | sys_rst                                                                  |                1 |              4 |
+|  sys_clk     | builder_bankmachine3_next_state                                                                         | sys_rst                                                                  |                3 |              4 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_hsync_end1_re                                                  | sys_rst                                                                  |                1 |              4 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_hscan1_re                                                      | sys_rst                                                                  |                1 |              4 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_hres_backstore[3]_i_1_n_0                                      | sys_rst                                                                  |                1 |              4 |
+|  sys_clk     | main_soclinux_uart_tx_fifo_syncfifo_re                                                                  | sys_rst                                                                  |                1 |              4 |
+|  sys_clk     | builder_bankmachine7_next_state                                                                         | sys_rst                                                                  |                2 |              4 |
+|  sys_clk     | builder_bankmachine6_next_state                                                                         | sys_rst                                                                  |                2 |              4 |
+|  sys_clk     | builder_bankmachine5_next_state                                                                         | sys_rst                                                                  |                2 |              4 |
+|  sys_clk     | main_soclinux_uart_rx_fifo_syncfifo_re                                                                  | sys_rst                                                                  |                1 |              4 |
+|  pix_clk     | rdata_fifo_graycounter1_ce                                                                              | pix_rst                                                                  |                1 |              4 |
+|  eth_tx_clk  | builder_liteethmacgap_state                                                                             | main_ethmac_tx_gap_inserter_sink_ready                                   |                1 |              4 |
+|  pix_clk     | rdata_chunk0                                                                                            | pix_rst                                                                  |                1 |              4 |
+|  clk200_clk  | main_soclinux_reset_counter[3]_i_1_n_0                                                                  | clk200_rst                                                               |                1 |              4 |
+|  sys_clk     | VexRiscv/dataCache_1_/p_2_in27_out                                                                      |                                                                          |                4 |              5 |
+|  sys_clk     |                                                                                                         | builder_soclinux_interface2_bank_bus_dat_r[4]_i_1_n_0                    |                3 |              5 |
+|  sys_clk     | main_soclinux_uart_rx_fifo_level0[4]_i_1_n_0                                                            | sys_rst                                                                  |                2 |              5 |
+|  sys_clk     | VexRiscv/dataCache_1_/decode_to_execute_INSTRUCTION_reg[20]_0[0]                                        |                                                                          |                3 |              5 |
+|  sys_clk     | main_soclinux_uart_tx_fifo_level0[4]_i_1_n_0                                                            | sys_rst                                                                  |                2 |              5 |
+|  sys_clk     | main_soclinux_sdram_time0[4]_i_1_n_0                                                                    | sys_rst                                                                  |                2 |              5 |
+|  sys_clk     | builder_soclinux_csrbank2_half_sys8x_taps0_re                                                           | sys_rst                                                                  |                1 |              5 |
+|  sys_clk     | builder_soclinux_csrbank6_dfii_pi3_command0_re                                                          | sys_rst                                                                  |                2 |              6 |
+|  sys_clk     | main_soclinux_sdram_sequencer_counter                                                                   | sys_rst                                                                  |                2 |              6 |
+|  sys_clk     | builder_soclinux_csrbank6_dfii_pi2_command0_re                                                          | sys_rst                                                                  |                2 |              6 |
+|  sys_clk     | builder_soclinux_csrbank6_dfii_pi1_command0_re                                                          | sys_rst                                                                  |                3 |              6 |
+|  sys_clk     |                                                                                                         | VexRiscv/dataCache_1_/FDPE_1[0]                                          |                2 |              6 |
+|  sys_clk     |                                                                                                         | VexRiscv/dataCache_1_/SR[0]                                              |                2 |              6 |
+|  sys_clk     | builder_soclinux_csrbank6_dfii_pi0_command0_re                                                          | sys_rst                                                                  |                2 |              6 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector1_address_storage_full[14]_i_1_n_0                                     | sys_rst                                                                  |                2 |              7 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector2_address_storage_full[14]_i_1_n_0                                     | sys_rst                                                                  |                3 |              7 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector0_address_storage_full[14]_i_1_n_0                                     | sys_rst                                                                  |                2 |              7 |
+|  sys_clk     | VexRiscv/dataCache_1_/stageB_mmuRsp_physicalAddress[11]_i_2_n_0                                         | VexRiscv/dataCache_1_/stageB_mmuRsp_physicalAddress[11]_i_1_n_0          |                2 |              7 |
+|  sys_clk     | builder_soclinux_csrbank5_driver_clocking_mmcm_adr0_re                                                  | sys_rst                                                                  |                2 |              7 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector3_address_storage_full[14]_i_1_n_0                                     | sys_rst                                                                  |                3 |              7 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector1_wrdata_storage_full[7]_i_1_n_0                                       | sys_rst                                                                  |                4 |              8 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector0_wrdata_storage_full[7]_i_1_n_0                                       | sys_rst                                                                  |                3 |              8 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector1_address_storage_full[7]_i_1_n_0                                      | sys_rst                                                                  |                3 |              8 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector0_wrdata_storage_full[31]_i_1_n_0                                      | sys_rst                                                                  |                4 |              8 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector1_wrdata_storage_full[15]_i_1_n_0                                      | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector1_wrdata_storage_full[23]_i_1_n_0                                      | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector1_wrdata_storage_full[31]_i_1_n_0                                      | sys_rst                                                                  |                3 |              8 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector2_wrdata_storage_full[31]_i_1_n_0                                      | sys_rst                                                                  |                4 |              8 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector2_address_storage_full[7]_i_1_n_0                                      | sys_rst                                                                  |                4 |              8 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector2_wrdata_storage_full[15]_i_1_n_0                                      | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector2_wrdata_storage_full[23]_i_1_n_0                                      | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/_zz_12_                                                                 | VexRiscv/IBusCachedPlugin_cache/_zz_13_                                  |                3 |              8 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_length_backstore[23]_i_1_n_0                                   | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | dmareader_storage_full[7]_i_1_n_0                                                                       | sys_rst                                                                  |                3 |              8 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_length_backstore[7]_i_1_n_0                                    | sys_rst                                                                  |                3 |              8 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_length_backstore[15]_i_1_n_0                                   | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_base_backstore[7]_i_1_n_0                                      | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_base_backstore[23]_i_1_n_0                                     | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_base_backstore[15]_i_1_n_0                                     | sys_rst                                                                  |                2 |              8 |
+|  pix_clk     | cmd_buffer_wrport_we                                                                                    |                                                                          |                1 |              8 |
+|  sys_clk     | dmareader_storage_full[15]_i_1_n_0                                                                      | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | dmareader_storage_full[23]_i_1_n_0                                                                      | sys_rst                                                                  |                1 |              8 |
+|  sys_clk     | dmareader_storage_full[31]_i_1_n_0                                                                      | sys_rst                                                                  |                4 |              8 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector0_wrdata_storage_full[23]_i_1_n_0                                      | sys_rst                                                                  |                3 |              8 |
+|  sys_clk     | main_ethmac_reader_length_storage_full[7]_i_1_n_0                                                       | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | main_soclinux_ctrl_storage_full[15]_i_1_n_0                                                             | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | main_soclinux_ctrl_storage_full[23]_i_1_n_0                                                             | sys_rst                                                                  |                1 |              8 |
+|  sys_clk     | main_soclinux_ctrl_storage_full[31]_i_1_n_0                                                             | sys_rst                                                                  |                5 |              8 |
+|  sys_clk     | main_soclinux_ctrl_storage_full[7]_i_1_n_0                                                              | sys_rst                                                                  |                3 |              8 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector0_address_storage_full[7]_i_1_n_0                                      | sys_rst                                                                  |                4 |              8 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector0_wrdata_storage_full[15]_i_1_n_0                                      | sys_rst                                                                  |                3 |              8 |
+|  sys_clk     |                                                                                                         | VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_injector_decodeRemoved  |                3 |              8 |
+|  sys_clk     |                                                                                                         | builder_soclinux_interface9_bank_bus_dat_r[7]_i_1_n_0                    |                3 |              8 |
+|  sys_clk     |                                                                                                         | VexRiscv/MmuPlugin_ports_1_cache_3_valid                                 |                2 |              8 |
+|  sys_clk     | main_soclinux_uart_phy_tx_reg[7]_i_1_n_0                                                                | sys_rst                                                                  |                3 |              8 |
+|  sys_clk     | main_soclinux_uart_rx_fifo_syncfifo_re                                                                  |                                                                          |                2 |              8 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector2_wrdata_storage_full[7]_i_1_n_0                                       | sys_rst                                                                  |                4 |              8 |
+|  sys_clk     |                                                                                                         | builder_soclinux_interface7_bank_bus_dat_r[7]_i_1_n_0                    |                8 |              8 |
+|  sys_clk     | main_soclinux_uart_tx_fifo_syncfifo_re                                                                  |                                                                          |                2 |              8 |
+|  sys_clk     |                                                                                                         | builder_soclinux_interface8_bank_bus_dat_r[7]_i_1_n_0                    |                4 |              8 |
+|  sys_clk     | main_soclinux_vexriscv_time_cmp_storage_full[15]_i_1_n_0                                                | sys_rst                                                                  |                1 |              8 |
+|  sys_clk     | main_soclinux_vexriscv_time_cmp_storage_full[23]_i_1_n_0                                                | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | main_soclinux_vexriscv_time_cmp_storage_full[31]_i_1_n_0                                                | sys_rst                                                                  |                4 |              8 |
+|  sys_clk     | main_soclinux_uart_phy_storage_full[7]_i_1_n_0                                                          | sys_rst                                                                  |                1 |              8 |
+|  sys_clk     | main_soclinux_vexriscv_time_cmp_storage_full[39]_i_1_n_0                                                | sys_rst                                                                  |                3 |              8 |
+|  sys_clk     | main_soclinux_vexriscv_time_cmp_storage_full[47]_i_1_n_0                                                | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | main_soclinux_vexriscv_time_cmp_storage_full[55]_i_1_n_0                                                | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | main_soclinux_vexriscv_time_cmp_storage_full[63]_i_1_n_0                                                | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | main_soclinux_vexriscv_time_cmp_storage_full[7]_i_1_n_0                                                 | sys_rst                                                                  |                3 |              8 |
+|  sys_clk     | s7hdmioutclocking_mmcm_dat_w_storage_full[15]_i_1_n_0                                                   | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | s7hdmioutclocking_mmcm_dat_w_storage_full[7]_i_1_n_0                                                    | sys_rst                                                                  |                1 |              8 |
+|  sys_clk     |                                                                                                         | builder_soclinux_interface0_bank_bus_dat_r[7]_i_1_n_0                    |                2 |              8 |
+|  sys_clk     |                                                                                                         | builder_soclinux_interface1_bank_bus_dat_r[7]_i_1_n_0                    |                4 |              8 |
+|  sys_clk     | main_soclinux_timer0_load_storage_full[7]_i_1_n_0                                                       | sys_rst                                                                  |                4 |              8 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector3_address_storage_full[7]_i_1_n_0                                      | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector3_wrdata_storage_full[15]_i_1_n_0                                      | sys_rst                                                                  |                4 |              8 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector3_wrdata_storage_full[23]_i_1_n_0                                      | sys_rst                                                                  |                4 |              8 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector3_wrdata_storage_full[31]_i_1_n_0                                      | sys_rst                                                                  |                3 |              8 |
+|  sys_clk     | main_soclinux_sdram_phaseinjector3_wrdata_storage_full[7]_i_1_n_0                                       | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     |                                                                                                         | builder_soclinux_interface3_bank_bus_dat_r[7]_i_1_n_0                    |                5 |              8 |
+|  sys_clk     |                                                                                                         | builder_soclinux_interface5_bank_bus_dat_r[7]_i_1_n_0                    |                5 |              8 |
+|  sys_clk     | main_soclinux_timer0_load_storage_full[15]_i_1_n_0                                                      | sys_rst                                                                  |                4 |              8 |
+|  sys_clk     | main_soclinux_timer0_load_storage_full[23]_i_1_n_0                                                      | sys_rst                                                                  |                4 |              8 |
+|  sys_clk     | main_soclinux_timer0_load_storage_full[31]_i_1_n_0                                                      | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | main_soclinux_uart_phy_storage_full[31]_i_1_n_0                                                         | sys_rst                                                                  |                1 |              8 |
+|  sys_clk     | main_soclinux_timer0_reload_storage_full[15]_i_1_n_0                                                    | sys_rst                                                                  |                4 |              8 |
+|  sys_clk     | main_soclinux_timer0_reload_storage_full[23]_i_1_n_0                                                    | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | main_soclinux_timer0_reload_storage_full[31]_i_1_n_0                                                    | sys_rst                                                                  |                3 |              8 |
+|  sys_clk     | main_soclinux_timer0_reload_storage_full[7]_i_1_n_0                                                     | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     |                                                                                                         | builder_soclinux_interface6_bank_bus_dat_r[7]_i_1_n_0                    |                6 |              8 |
+|  sys_clk     | main_soclinux_uart_phy_rx_reg                                                                           | sys_rst                                                                  |                3 |              8 |
+|  sys_clk     | main_soclinux_uart_phy_source_payload_data[7]_i_1_n_0                                                   | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | main_soclinux_uart_phy_storage_full[15]_i_1_n_0                                                         | sys_rst                                                                  |                2 |              8 |
+|  sys_clk     | main_soclinux_uart_phy_storage_full[23]_i_1_n_0                                                         | sys_rst                                                                  |                1 |              8 |
+|  sys_clk     | builder_soclinux_csrbank6_dfii_control0_re                                                              | sys_rst                                                                  |                4 |              9 |
+|  eth_rx_clk  |                                                                                                         | main_ethmac_crc32_checker_syncfifo_level                                 |                3 |              9 |
+|  pix_clk     | dmareader_fifo_rdport_re                                                                                | pix_rst                                                                  |                2 |              9 |
+|  pix_clk     | dmareader_fifo_wrport_we                                                                                | pix_rst                                                                  |                2 |              9 |
+|  sys_clk     | main_ethmac_reader_counter_ce                                                                           | main_ethmac_reader_counter[10]_i_1_n_0                                   |                3 |              9 |
+|  sys_clk     | main_ethphy_counter_ce                                                                                  | sys_rst                                                                  |                3 |              9 |
+|  eth_rx_clk  | main_ethmac_rx_converter_converter_source_payload_data[19]_i_1_n_0                                      | eth_rx_rst                                                               |                2 |             10 |
+|  eth_rx_clk  | main_ethmac_rx_converter_converter_source_payload_data[29]_i_1_n_0                                      | eth_rx_rst                                                               |                2 |             10 |
+|  eth_rx_clk  | main_ethmac_rx_converter_converter_source_payload_data[39]_i_1_n_0                                      | eth_rx_rst                                                               |                2 |             10 |
+|  eth_rx_clk  | main_ethmac_rx_converter_converter_source_payload_data[9]_i_1_n_0                                       | eth_rx_rst                                                               |                2 |             10 |
+|  sys_clk     |                                                                                                         | main_soclinux_sdram_timer_count1[9]_i_1_n_0                              |                2 |             10 |
+|  pix_clk     | dmareader_rsv_level[9]_i_1_n_0                                                                          | pix_rst                                                                  |                4 |             10 |
+|  pix_clk     | dmareader_fifo_level0[9]_i_1_n_0                                                                        | pix_rst                                                                  |                4 |             10 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_vscan0_re                                                      | sys_rst                                                                  |                3 |             12 |
+|  pix_clk     | timinggenerator_hcounter                                                                                | timinggenerator_vcounter[0]_i_1_n_0                                      |                3 |             12 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_vsync_end0_re                                                  | sys_rst                                                                  |                3 |             12 |
+|  sys_clk     | initiator_csrstorage5_storage_full[11]_i_1_n_0                                                          | sys_rst                                                                  |                3 |             12 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_hscan0_re                                                      | sys_rst                                                                  |                3 |             12 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_hres0_re                                                       | sys_rst                                                                  |                5 |             12 |
+|  sys_clk     | initiator_csrstorage4_storage_full[11]_i_1_n_0                                                          | sys_rst                                                                  |                4 |             12 |
+|  sys_clk     | initiator_csrstorage2_storage_full[11]_i_1_n_0                                                          | sys_rst                                                                  |                3 |             12 |
+|  sys_clk     | VexRiscv/dataCache_1_/CsrPlugin_medeleg_IAM                                                             | VexRiscv/dataCache_1_/reset0                                             |                3 |             12 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_hsync_start0_re                                                | sys_rst                                                                  |                3 |             12 |
+|  pix_clk     | timinggenerator_source_ready                                                                            | timinggenerator_hcounter[0]_i_1_n_0                                      |                3 |             12 |
+|  sys_clk     | main_soclinux_sdram_bankmachine0_row                                                                    | sys_rst                                                                  |                4 |             15 |
+|  sys_clk     | main_soclinux_sdram_bankmachine5_row                                                                    | sys_rst                                                                  |                3 |             15 |
+|  sys_clk     | main_soclinux_sdram_bankmachine1_row                                                                    | sys_rst                                                                  |                5 |             15 |
+|  sys_clk     | main_soclinux_sdram_bankmachine2_row[14]_i_1_n_0                                                        | sys_rst                                                                  |                4 |             15 |
+|  sys_clk     | main_soclinux_sdram_bankmachine3_row                                                                    | sys_rst                                                                  |                4 |             15 |
+|  sys_clk     | main_soclinux_sdram_bankmachine4_row                                                                    | sys_rst                                                                  |                3 |             15 |
+|  sys_clk     | main_soclinux_sdram_bankmachine6_row                                                                    | sys_rst                                                                  |                4 |             15 |
+|  sys_clk     | main_soclinux_sdram_bankmachine7_row                                                                    | sys_rst                                                                  |                3 |             15 |
+|  eth_tx_clk  | main_ethmac_padding_inserter_counter_ce                                                                 | main_ethmac_padding_inserter_counter[1]                                  |                4 |             15 |
+|  sys_clk     | main_soclinux_uart_tx_fifo_wrport_we                                                                    |                                                                          |                2 |             16 |
+|  sys_clk     | storage_14_reg_0_1_0_5_i_1_n_0                                                                          |                                                                          |                2 |             16 |
+|  sys_clk     | main_soclinux_uart_rx_fifo_wrport_we                                                                    |                                                                          |                2 |             16 |
+|  eth_rx_clk  | main_ethmac_crc32_checker_syncfifo_wrport_we__0                                                         |                                                                          |                2 |             16 |
+|  pix_clk     |                                                                                                         | hdmi_phy_es0_cnt[5]_i_1_n_0                                              |               11 |             18 |
+|  eth_rx_clk  |                                                                                                         |                                                                          |                6 |             19 |
+|  sys_clk     | VexRiscv/dataCache_1_/decode_to_execute_INSTRUCTION_reg[27][0]                                          |                                                                          |                3 |             20 |
+|  sys_clk     | VexRiscv/dataCache_1_/p_103_in                                                                          |                                                                          |                9 |             20 |
+|  sys_clk     | sel                                                                                                     | VexRiscv/IBusCachedPlugin_cache/FDPE_1                                   |                5 |             20 |
+|  sys_clk     | VexRiscv/MmuPlugin_shared_vpn_0[9]_i_1_n_0                                                              |                                                                          |                4 |             21 |
+|  eth_tx_clk  |                                                                                                         | eth_tx_rst                                                               |                8 |             21 |
+|  sys_clk     | VexRiscv/dataCache_1_/MmuPlugin_ports_1_cache_1_virtualAddress_0                                        |                                                                          |                5 |             22 |
+|  sys_clk     | VexRiscv/dataCache_1_/MmuPlugin_ports_1_entryToReplace_value_reg[0]_2[0]                                | VexRiscv/dataCache_1_/MmuPlugin_ports_1_entryToReplace_value_reg[0]_3    |                7 |             22 |
+|  sys_clk     | VexRiscv/dataCache_1_/MmuPlugin_ports_1_entryToReplace_value_reg[0]_2[0]                                |                                                                          |                6 |             22 |
+|  sys_clk     | VexRiscv/dataCache_1_/MmuPlugin_ports_0_entryToReplace_value_reg[1][0]                                  |                                                                          |                8 |             22 |
+|  sys_clk     | VexRiscv/dataCache_1_/MmuPlugin_ports_0_entryToReplace_value_reg[0]_4[0]                                |                                                                          |                8 |             22 |
+|  sys_clk     | VexRiscv/dataCache_1_/E[0]                                                                              | VexRiscv/dataCache_1_/MmuPlugin_ports_1_entryToReplace_value_reg[1]_1    |                7 |             22 |
+|  sys_clk     | VexRiscv/dataCache_1_/E[0]                                                                              |                                                                          |                6 |             22 |
+|  sys_clk     | VexRiscv/dataCache_1_/MmuPlugin_ports_1_cache_2_virtualAddress_0                                        | VexRiscv/dataCache_1_/MmuPlugin_ports_1_entryToReplace_value_reg[1]_0    |                9 |             22 |
+|  sys_clk     | VexRiscv/dataCache_1_/MmuPlugin_ports_1_cache_2_virtualAddress_0                                        |                                                                          |                5 |             22 |
+|  eth_tx_clk  |                                                                                                         |                                                                          |                7 |             22 |
+|  sys_clk     | VexRiscv/dataCache_1_/MmuPlugin_ports_1_cache_1_virtualAddress_0                                        | VexRiscv/dataCache_1_/MmuPlugin_ports_1_entryToReplace_value_reg[0]      |                7 |             22 |
+|  sys_clk     | VexRiscv/dataCache_1_/MmuPlugin_ports_0_cache_3_virtualAddress_0                                        |                                                                          |                6 |             22 |
+|  sys_clk     | VexRiscv/dataCache_1_/MmuPlugin_ports_0_cache_2_valid58_out                                             |                                                                          |                6 |             22 |
+|  sys_clk     | main_soclinux_sdram_bankmachine4_cmd_buffer_pipe_ce                                                     | sys_rst                                                                  |                8 |             24 |
+|  sys_clk     | VexRiscv/dataCache_1_/MmuPlugin_ports_0_entryToReplace_value_reg[1][0]                                  | VexRiscv/dataCache_1_/MmuPlugin_ports_0_entryToReplace_value_reg[1]_2    |                6 |             24 |
+|  sys_clk     | VexRiscv/dataCache_1_/MmuPlugin_ports_0_cache_2_valid58_out                                             | VexRiscv/dataCache_1_/MmuPlugin_ports_0_entryToReplace_value_reg[1]_1    |                6 |             24 |
+|  sys_clk     | VexRiscv/dataCache_1_/MmuPlugin_ports_0_entryToReplace_value_reg[0]_4[0]                                | VexRiscv/dataCache_1_/MmuPlugin_ports_0_entryToReplace_value_reg[0]_1    |                8 |             24 |
+|  sys_clk     | main_soclinux_sdram_bankmachine0_cmd_buffer_pipe_ce                                                     | sys_rst                                                                  |                7 |             24 |
+|  sys_clk     | main_soclinux_sdram_bankmachine1_cmd_buffer_pipe_ce                                                     | sys_rst                                                                  |                8 |             24 |
+|  sys_clk     |                                                                                                         | VexRiscv/IBusCachedPlugin_cache/builder_soclinux_count_reg_13_sn_1       |               14 |             24 |
+|  sys_clk     | VexRiscv/dataCache_1_/MmuPlugin_ports_0_cache_3_virtualAddress_0                                        | VexRiscv/dataCache_1_/MmuPlugin_ports_0_entryToReplace_value_reg[0]_2    |                7 |             24 |
+|  sys_clk     | main_soclinux_sdram_bankmachine5_cmd_buffer_pipe_ce                                                     | sys_rst                                                                  |                7 |             24 |
+|  sys_clk     | main_soclinux_sdram_bankmachine2_cmd_buffer_pipe_ce                                                     | sys_rst                                                                  |                8 |             24 |
+|  sys_clk     | main_soclinux_a7ddrphy_bitslip8_value                                                                   | main_soclinux_a7ddrphy_bitslip15_value                                   |               11 |             24 |
+|  sys_clk     | main_soclinux_sdram_bankmachine6_cmd_buffer_pipe_ce                                                     | sys_rst                                                                  |                9 |             24 |
+|  sys_clk     | main_soclinux_a7ddrphy_bitslip0_value                                                                   | main_soclinux_a7ddrphy_bitslip7_value                                    |               12 |             24 |
+|  sys_clk     | main_soclinux_sdram_bankmachine7_cmd_buffer_pipe_ce                                                     | sys_rst                                                                  |                8 |             24 |
+|  sys_clk     | main_soclinux_sdram_bankmachine3_cmd_buffer_pipe_ce                                                     | sys_rst                                                                  |                8 |             24 |
+|  sys_clk     | VexRiscv/dataCache_1_/p_2_in27_out                                                                      | VexRiscv/dataCache_1_/reset0                                             |                5 |             25 |
+|  eth_rx_clk  |                                                                                                         | eth_rx_rst                                                               |                9 |             27 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/_zz_228_1_out                                                           |                                                                          |                6 |             27 |
+|  pix_clk     | dmareader_sink_sink_ready                                                                               | dmareader_offset[0]_i_1_n_0                                              |                7 |             27 |
+|  sys_clk     | VexRiscv/dataCache_1_/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_writeBack_reg[0]                  |                                                                          |                9 |             30 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_fetchPc_booted_reg[0]                                  |                                                                          |               16 |             30 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_2_input_ready                           |                                                                          |               11 |             30 |
+|  sys_clk     | VexRiscv/dataCache_1_/decode_to_execute_INSTRUCTION_reg[28][0]                                          |                                                                          |               14 |             30 |
+|  sys_clk     |                                                                                                         | main_soclinux_uart_phy_phase_accumulator_rx[30]_i_1_n_0                  |                8 |             31 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/main_soclinux_sdram_bankmachine6_cmd_buffer_lookahead_level_reg[0]      |                                                                          |                4 |             32 |
+|  sys_clk     | VexRiscv/dataCache_1_/CsrPlugin_hadException_reg[0]                                                     |                                                                          |               18 |             32 |
+|  eth_rx_clk  | main_ethmac_crc32_checker_crc_ce                                                                        | main_ethmac_crc32_checker_syncfifo_level                                 |               12 |             32 |
+|  sys_clk     |                                                                                                         | main_soclinux_uart_phy_phase_accumulator_tx[31]_i_1_n_0                  |                8 |             32 |
+|  sys_clk     | VexRiscv/dataCache_1_/_zz_191__reg[1][0]                                                                |                                                                          |               13 |             32 |
+|  sys_clk     | VexRiscv/dataCache_1_/decode_to_execute_INSTRUCTION_reg[20][0]                                          |                                                                          |                8 |             32 |
+|  sys_clk     | main_soclinux_timer0_update_value_re                                                                    | sys_rst                                                                  |                7 |             32 |
+|  sys_clk     | VexRiscv/dataCache_1_/decode_to_execute_INSTRUCTION_reg[21][0]                                          |                                                                          |               11 |             32 |
+|  sys_clk     | mem_3_reg_i_26_n_0                                                                                      | main_ethmac_writer_counter[0]_i_1_n_0                                    |                8 |             32 |
+|  sys_clk     | VexRiscv/dataCache_1_/decode_to_execute_INSTRUCTION_reg[27]_0[0]                                        | VexRiscv/dataCache_1_/reset0                                             |               10 |             32 |
+|  eth_tx_clk  | main_ethmac_padding_inserter_counter_ce                                                                 | main_ethmac_crc32_inserter_reg                                           |               10 |             32 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_base0_re                                                       | sys_rst                                                                  |                7 |             32 |
+|  pix_clk     | o                                                                                                       | pix_rst                                                                  |                8 |             32 |
+|  sys_clk     | main_ethmac_ps_crc_error_o                                                                              | sys_rst                                                                  |                8 |             32 |
+|  sys_clk     | main_ethmac_ps_preamble_error_o                                                                         | sys_rst                                                                  |                8 |             32 |
+|  sys_clk     | VexRiscv/memory_MulDivIterativePlugin_div_result[31]_i_1_n_0                                            |                                                                          |                8 |             32 |
+|  sys_clk     | main_ethmac_writer_errors_status_liteethmac_next_value_ce                                               | sys_rst                                                                  |                9 |             32 |
+|  sys_clk     | VexRiscv/memory_MulDivIterativePlugin_accumulator[31]_i_1_n_0                                           | VexRiscv/dataCache_1_/memory_MulDivIterativePlugin_div_counter_willClear |               14 |             32 |
+|  sys_clk     | main_soclinux_ctrl_bus_errors                                                                           | sys_rst                                                                  |                8 |             32 |
+|  sys_clk     | VexRiscv/CsrPlugin_mtval                                                                                |                                                                          |                8 |             32 |
+|  pix_clk     | underflow_counter[0]_i_2_n_0                                                                            | underflow_counter[0]_i_1_n_0                                             |                8 |             32 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/main_soclinux_sdram_bankmachine7_cmd_buffer_lookahead_level_reg[0]      |                                                                          |                4 |             32 |
+|  sys_clk     | builder_soclinux_csrbank5_core_initiator_length0_re                                                     | sys_rst                                                                  |               10 |             32 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/main_soclinux_sdram_bankmachine4_cmd_buffer_lookahead_level_reg[3]      |                                                                          |                4 |             32 |
+|  sys_clk     | VexRiscv/dataCache_1_/decode_to_execute_INSTRUCTION_reg[26]_0[0]                                        |                                                                          |                8 |             32 |
+|  sys_clk     | VexRiscv/dataCache_1_/decode_to_execute_INSTRUCTION_reg[29][0]                                          |                                                                          |               14 |             32 |
+|  sys_clk     | VexRiscv/dataCache_1_/execute_to_memory_IS_DIV_reg[0]                                                   |                                                                          |                8 |             32 |
+|  sys_clk     | VexRiscv/dataCache_1_/execute_to_memory_IS_MUL_reg[0]                                                   |                                                                          |                8 |             32 |
+|  sys_clk     | VexRiscv/dataCache_1_/writeBack_arbitration_isValid_reg_0[0]                                            | VexRiscv/dataCache_1_/reset0                                             |                7 |             32 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/CsrPlugin_exceptionPortCtrl_exceptionContext_badAddr                    |                                                                          |               20 |             32 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/main_soclinux_sdram_bankmachine0_cmd_buffer_lookahead_level_reg[0]      |                                                                          |                4 |             32 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/main_soclinux_sdram_bankmachine1_cmd_buffer_lookahead_level_reg[0]      |                                                                          |                4 |             32 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/main_soclinux_sdram_bankmachine2_cmd_buffer_lookahead_level_reg[2]      |                                                                          |                4 |             32 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/main_soclinux_sdram_bankmachine5_cmd_buffer_lookahead_level_reg[0]      |                                                                          |                4 |             32 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/main_soclinux_sdram_bankmachine3_cmd_buffer_lookahead_level_reg[0]      |                                                                          |                4 |             32 |
+|  sys_clk     | VexRiscv/memory_MulDivIterativePlugin_accumulator[64]_i_1_n_0                                           | VexRiscv/dataCache_1_/memory_MulDivIterativePlugin_div_counter_willClear |                9 |             33 |
+|  pix_clk     |                                                                                                         |                                                                          |               13 |             35 |
+|  sys_clk     | VexRiscv/dataCache_1_/memory_to_writeBack_MEMORY_ENABLE_reg[0]                                          |                                                                          |               13 |             37 |
+|  pix_clk     | cmd_buffer_sink_valid                                                                                   |                                                                          |                5 |             40 |
+|  sys_clk     | VexRiscv/dataCache_1_/_zz_21_0                                                                          | VexRiscv/dataCache_1_/reset0                                             |               16 |             42 |
+|  sys_clk     | main_ethmac_writer_fifo_wrport_we                                                                       |                                                                          |                6 |             48 |
+|  sys_clk     |                                                                                                         | VexRiscv/dataCache_1_/reset0                                             |               25 |             49 |
+|  sys_clk     | VexRiscv/dataCache_1_/_zz_21_0                                                                          |                                                                          |               19 |             56 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/_zz_124__reg_2[0]                                                       |                                                                          |               25 |             68 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/_zz_124__reg[0]                                                         |                                                                          |               21 |             68 |
+|  sys_clk     | VexRiscv/IBusCachedPlugin_cache/E[0]                                                                    |                                                                          |               29 |             87 |
+|  sys_clk     | main_soclinux_vexriscv_latch_re                                                                         | sys_rst                                                                  |               29 |            128 |
+|  sys_clk     | main_soclinux_sdram_inti_p0_rddata_valid                                                                | sys_rst                                                                  |               45 |            128 |
+|  sys_clk     | VexRiscv/dataCache_1_/MmuPlugin_dBusAccess_cmd_ready0                                                   |                                                                          |               51 |            156 |
+|  pix_clk     |                                                                                                         | pix_rst                                                                  |               63 |            182 |
+|  sys_clk     | VexRiscv/dataCache_1_/memory_MulDivIterativePlugin_div_counter_willClear                                |                                                                          |               70 |            190 |
+|  sys_clk     |                                                                                                         |                                                                          |              118 |            201 |
+|  sys_clk     | initiator_cdc_wrport_we                                                                                 |                                                                          |               27 |            216 |
+|  sys_clk     |                                                                                                         | sys_rst                                                                  |              317 |            874 |
++--------------+---------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+
+

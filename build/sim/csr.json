@@ -1,0 +1,153 @@
+{
+    "csr_bases": {
+        "cpu": 4026533888,
+        "ctrl": 4026531840,
+        "supervisor": 4026540032,
+        "timer0": 4026537984,
+        "uart": 4026535936
+    },
+    "csr_registers": {
+        "cpu_timer_latch": {
+            "addr": 4026533888,
+            "size": 1,
+            "type": "rw"
+        },
+        "cpu_timer_time": {
+            "addr": 4026533892,
+            "size": 8,
+            "type": "ro"
+        },
+        "cpu_timer_time_cmp": {
+            "addr": 4026533924,
+            "size": 8,
+            "type": "rw"
+        },
+        "ctrl_reset": {
+            "addr": 4026531840,
+            "size": 1,
+            "type": "rw"
+        },
+        "ctrl_scratch": {
+            "addr": 4026531844,
+            "size": 4,
+            "type": "rw"
+        },
+        "ctrl_bus_errors": {
+            "addr": 4026531860,
+            "size": 4,
+            "type": "ro"
+        },
+        "supervisor_finish": {
+            "addr": 4026540032,
+            "size": 1,
+            "type": "rw"
+        },
+        "timer0_load": {
+            "addr": 4026537984,
+            "size": 4,
+            "type": "rw"
+        },
+        "timer0_reload": {
+            "addr": 4026538000,
+            "size": 4,
+            "type": "rw"
+        },
+        "timer0_en": {
+            "addr": 4026538016,
+            "size": 1,
+            "type": "rw"
+        },
+        "timer0_update_value": {
+            "addr": 4026538020,
+            "size": 1,
+            "type": "rw"
+        },
+        "timer0_value": {
+            "addr": 4026538024,
+            "size": 4,
+            "type": "ro"
+        },
+        "timer0_ev_status": {
+            "addr": 4026538040,
+            "size": 1,
+            "type": "rw"
+        },
+        "timer0_ev_pending": {
+            "addr": 4026538044,
+            "size": 1,
+            "type": "rw"
+        },
+        "timer0_ev_enable": {
+            "addr": 4026538048,
+            "size": 1,
+            "type": "rw"
+        },
+        "uart_rxtx": {
+            "addr": 4026535936,
+            "size": 1,
+            "type": "rw"
+        },
+        "uart_txfull": {
+            "addr": 4026535940,
+            "size": 1,
+            "type": "ro"
+        },
+        "uart_rxempty": {
+            "addr": 4026535944,
+            "size": 1,
+            "type": "ro"
+        },
+        "uart_ev_status": {
+            "addr": 4026535948,
+            "size": 1,
+            "type": "rw"
+        },
+        "uart_ev_pending": {
+            "addr": 4026535952,
+            "size": 1,
+            "type": "rw"
+        },
+        "uart_ev_enable": {
+            "addr": 4026535956,
+            "size": 1,
+            "type": "rw"
+        }
+    },
+    "constants": {
+        "timer0_interrupt": 1,
+        "uart_interrupt": 0,
+        "sim": null,
+        "rom_boot_address": 536870912,
+        "config_clock_frequency": 1000000,
+        "config_cpu_reset_addr": 0,
+        "config_cpu_type": "vexriscv",
+        "config_cpu_type_vexriscv": 1,
+        "config_cpu_variant": "linux",
+        "config_cpu_variant_linux": 1,
+        "config_csr_alignment": 32,
+        "config_csr_data_width": 8,
+        "shadow_base": 2147483648
+    },
+    "memories": {
+        "rom": {
+            "base": 0,
+            "size": 32768
+        },
+        "sram": {
+            "base": 268435456,
+            "size": 4096
+        },
+        "main_ram": {
+            "base": 3221225472,
+            "size": 33554432
+        },
+        "csr": {
+            "base": 4026531840,
+            "size": 16777216
+        },
+        "emulator_ram": {
+            "base": 536870912,
+            "size": 16384
+        }
+    }
+}
