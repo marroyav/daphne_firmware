@@ -14,7 +14,7 @@ This project demonstrates **how high level HDLs (Spinal HDL, Migen) enable new p
 
 
 ## Main Scheme
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt text](https://github.com/matheos/daphne_firmware/blob/master/daphne_scheme)
 
 ## Installing LiteX
 ```sh
