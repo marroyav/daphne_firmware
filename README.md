@@ -14,7 +14,7 @@ This project demonstrates **how high level HDLs (Spinal HDL, Migen) enable new p
 
 
 ## Main Scheme
-![Scheme](://github.com/matheos/daphne_firmware/blob/master/daphne.jpg)
+[![scheme](DAPHNE.png)
 
 
 ### Load the FPGA bitstream
