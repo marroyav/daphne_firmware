@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Aug 30 16:38:26 2019
+# Process ID: 453
+# Current directory: /home/mam/fpga/linux/daphne
+# Command line: vivado
+# Log file: /home/mam/fpga/linux/daphne/vivado.log
+# Journal file: /home/mam/fpga/linux/daphne/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.xpr
+INFO: [Project 1-313] Project file moved from '/home/mam/fpga/linux/linux-on-litex-vexriscv/build/nexys_video/gateware' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 6343.180 ; gain = 93.129 ; free physical = 740 ; free virtual = 9687
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  6 2018-23:53:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276AC80FCB
+set_property PROGRAM.FILE {/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.bin} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.bin} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7220.586 ; gain = 0.000 ; free physical = 144 ; free virtual = 8840
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 30 16:51:18 2019...
