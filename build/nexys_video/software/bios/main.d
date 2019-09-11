@@ -9,12 +9,12 @@ main.o: /home/mam/fpga/linux/litex/litex/soc/software/bios/main.c \
  /home/mam/fpga/linux/litex/litex/soc/software/include/base/csr-defs.h \
  /home/mam/fpga/linux/litex/litex/soc/software/include/base/id.h \
  /home/mam/fpga/linux/litex/litex/soc/software/include/base/irq.h \
- /home/mam/fpga/linux/linux-on-litex-vexriscv/build/nexys_video/software/include/generated/csr.h \
+ /home/mam/fpga/linux/daphne/build/nexys_video/software/include/generated/csr.h \
  /home/mam/fpga/linux/litex/litex/soc/software/include/base/stdint.h \
  /home/mam/fpga/linux/litex/litex/soc/software/include/hw/common.h \
  /home/mam/fpga/linux/litex/litex/soc/software/include/base/crc.h \
- /home/mam/fpga/linux/linux-on-litex-vexriscv/build/nexys_video/software/include/generated/mem.h \
- /home/mam/fpga/linux/linux-on-litex-vexriscv/build/nexys_video/software/include/generated/git.h \
+ /home/mam/fpga/linux/daphne/build/nexys_video/software/include/generated/mem.h \
+ /home/mam/fpga/linux/daphne/build/nexys_video/software/include/generated/git.h \
  /home/mam/fpga/linux/litex/litex/soc/software/include/net/microudp.h \
  /home/mam/fpga/linux/litex/litex/soc/software/include/base/mdio.h \
  /home/mam/fpga/linux/litex/litex/soc/software/bios/sdram.h \
@@ -40,7 +40,7 @@ main.o: /home/mam/fpga/linux/litex/litex/soc/software/bios/main.c \
 
 /home/mam/fpga/linux/litex/litex/soc/software/include/base/irq.h:
 
-/home/mam/fpga/linux/linux-on-litex-vexriscv/build/nexys_video/software/include/generated/csr.h:
+/home/mam/fpga/linux/daphne/build/nexys_video/software/include/generated/csr.h:
 
 /home/mam/fpga/linux/litex/litex/soc/software/include/base/stdint.h:
 
@@ -48,9 +48,9 @@ main.o: /home/mam/fpga/linux/litex/litex/soc/software/bios/main.c \
 
 /home/mam/fpga/linux/litex/litex/soc/software/include/base/crc.h:
 
-/home/mam/fpga/linux/linux-on-litex-vexriscv/build/nexys_video/software/include/generated/mem.h:
+/home/mam/fpga/linux/daphne/build/nexys_video/software/include/generated/mem.h:
 
-/home/mam/fpga/linux/linux-on-litex-vexriscv/build/nexys_video/software/include/generated/git.h:
+/home/mam/fpga/linux/daphne/build/nexys_video/software/include/generated/git.h:
 
 /home/mam/fpga/linux/litex/litex/soc/software/include/net/microudp.h:
 

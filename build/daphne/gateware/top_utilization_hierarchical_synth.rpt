@@ -1,0 +1,32 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 11 11:18:45 2019
+| Host         : debian running 64-bit Debian GNU/Linux 10 (buster)
+| Command      : report_utilization -hierarchical -file top_utilization_hierarchical_synth.rpt
+| Design       : top
+| Device       : 7a200tsbg484-1
+| Design State : Synthesized
+-----------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------------+------------------+------------+------------+---------+------+------+--------+--------+--------------+
+|          Instance          |      Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP48 Blocks |
++----------------------------+------------------+------------+------------+---------+------+------+--------+--------+--------------+
+| top                        |            (top) |       6581 |       6262 |     316 |    3 | 5502 |     25 |     36 |            0 |
+|   (top)                    |            (top) |       3620 |       3301 |     316 |    3 | 3492 |     24 |     28 |            0 |
+|   VexRiscv                 |         VexRiscv |       2961 |       2961 |       0 |    0 | 2010 |      1 |      8 |            0 |
+|     (VexRiscv)             |         VexRiscv |       1344 |       1344 |       0 |    0 | 1733 |      0 |      2 |            0 |
+|     IBusCachedPlugin_cache | InstructionCache |        722 |        722 |       0 |    0 |  106 |      1 |      1 |            0 |
+|     dataCache_1_           |        DataCache |        895 |        895 |       0 |    0 |  171 |      0 |      5 |            0 |
++----------------------------+------------------+------------+------------+---------+------+------+--------+--------+--------------+
+
+

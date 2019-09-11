@@ -8,7 +8,7 @@ COPY_TO_MAIN_RAM=1
 EXECUTE_IN_PLACE=0
 SOC_DIRECTORY=/home/mam/fpga/linux/litex/litex/soc
 export BUILDINC_DIRECTORY
-BUILDINC_DIRECTORY=/home/mam/fpga/linux/linux-on-litex-vexriscv/build/nexys_video/software/include
+BUILDINC_DIRECTORY=/home/mam/fpga/linux/daphne/build/nexys_video/software/include
 LIBCOMPILER_RT_DIRECTORY=/home/mam/fpga/linux/litex/litex/soc/software/libcompiler_rt
 LIBBASE_DIRECTORY=/home/mam/fpga/linux/litex/litex/soc/software/libbase
 LIBNET_DIRECTORY=/home/mam/fpga/linux/litex/litex/soc/software/libnet

@@ -1,0 +1,1493 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Sep 11 09:32:45 2019
+# Process ID: 3331
+# Current directory: /home/mam/fpga/linux/daphne/build/nexys_video/gateware
+# Command line: vivado -mode batch -source top.tcl
+# Log file: /home/mam/fpga/linux/daphne/build/nexys_video/gateware/vivado.log
+# Journal file: /home/mam/fpga/linux/daphne/build/nexys_video/gateware/vivado.jou
+#-----------------------------------------------------------
+source top.tcl
+# create_project -force -name top -part xc7a200t-sbg484-1
+# set_msg_config -id {Common 17-55} -new_severity {Warning}
+# add_files {top.v}
+# add_files {/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v}
+# read_xdc top.xdc
+# synth_design -directive default -top top -part xc7a200t-sbg484-1
+Command: synth_design -directive default -top top -part xc7a200t-sbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3339 
+WARNING: [Synth 8-2292] literal value truncated to fit in 6 bits [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:2993]
+WARNING: [Synth 8-2292] literal value truncated to fit in 6 bits [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3015]
+WARNING: [Synth 8-2292] literal value truncated to fit in 6 bits [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3037]
+WARNING: [Synth 8-2292] literal value truncated to fit in 6 bits [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:10895]
+WARNING: [Synth 8-2292] literal value truncated to fit in 6 bits [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:10910]
+WARNING: [Synth 8-2292] literal value truncated to fit in 6 bits [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:10925]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1345.684 ; gain = 48.297 ; free physical = 3009 ; free virtual = 12787
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:300]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:302]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:303]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1064]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1067]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1070]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1153]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1156]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1159]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1242]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1245]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1248]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1331]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1334]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1337]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1420]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1423]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1426]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1509]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1512]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1515]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1598]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1601]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1604]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1687]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1690]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1693]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1748]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1751]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1755]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1758]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1818]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:1820]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:2172]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:2177]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:2220]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:2225]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:2544]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:2549]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:2586]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:2591]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:2764]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:2769]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:2941]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:2943]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3832]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3832]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3833]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3833]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3848]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3848]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3849]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3849]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3850]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3850]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3851]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3851]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3852]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3852]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3853]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3853]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3854]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3854]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3855]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3855]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3856]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3856]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3857]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3857]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3858]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3858]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3859]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3859]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3860]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3860]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3861]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3861]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3862]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3862]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3863]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3863]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3864]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3864]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3865]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3865]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3866]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3866]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3867]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3867]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3868]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3868]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3869]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3869]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3870]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3870]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3871]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3871]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3872]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3872]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3873]
+INFO: [Common 17-14] Message 'Synth 8-5534' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3876] $readmem data file 'mem.init' is read successfully [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14838]
+INFO: [Synth 8-3876] $readmem data file 'mem_1.init' is read successfully [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14858]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13329]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13410]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13492]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13606]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13628]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13883]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14163]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14253]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14920]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22464]
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (2#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22464]
+WARNING: [Synth 8-350] instance 'IDELAYCTRL' of module 'IDELAYCTRL' requires 3 connections, but only 2 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14920]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: BUF - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (3#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+WARNING: [Synth 8-350] instance 'OSERDESE2' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14931]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:28244]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (4#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:28244]
+WARNING: [Synth 8-350] instance 'OSERDESE2_1' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14959]
+WARNING: [Synth 8-350] instance 'OSERDESE2_2' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14981]
+WARNING: [Synth 8-350] instance 'OSERDESE2_3' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15003]
+WARNING: [Synth 8-350] instance 'OSERDESE2_4' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15025]
+WARNING: [Synth 8-350] instance 'OSERDESE2_5' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15047]
+WARNING: [Synth 8-350] instance 'OSERDESE2_6' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15069]
+WARNING: [Synth 8-350] instance 'OSERDESE2_7' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15091]
+WARNING: [Synth 8-350] instance 'OSERDESE2_8' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15113]
+WARNING: [Synth 8-350] instance 'OSERDESE2_9' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15135]
+WARNING: [Synth 8-350] instance 'OSERDESE2_10' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15157]
+WARNING: [Synth 8-350] instance 'OSERDESE2_11' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15179]
+WARNING: [Synth 8-350] instance 'OSERDESE2_12' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15201]
+WARNING: [Synth 8-350] instance 'OSERDESE2_13' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15223]
+WARNING: [Synth 8-350] instance 'OSERDESE2_14' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15245]
+WARNING: [Synth 8-350] instance 'OSERDESE2_15' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15267]
+WARNING: [Synth 8-350] instance 'OSERDESE2_16' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15289]
+WARNING: [Synth 8-350] instance 'OSERDESE2_17' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15311]
+WARNING: [Synth 8-350] instance 'OSERDESE2_18' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15333]
+WARNING: [Synth 8-350] instance 'OSERDESE2_19' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15355]
+WARNING: [Synth 8-350] instance 'OSERDESE2_20' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15377]
+WARNING: [Synth 8-350] instance 'OSERDESE2_21' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15399]
+WARNING: [Synth 8-350] instance 'OSERDESE2_22' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15421]
+WARNING: [Synth 8-350] instance 'OSERDESE2_23' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15443]
+WARNING: [Synth 8-350] instance 'OSERDESE2_24' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15465]
+WARNING: [Synth 8-350] instance 'OSERDESE2_25' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15487]
+WARNING: [Synth 8-350] instance 'OSERDESE2_26' of module 'OSERDESE2' requires 27 connections, but only 17 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15509]
+INFO: [Synth 8-6157] synthesizing module 'OBUFTDS' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:28494]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFTDS' (5#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:28494]
+WARNING: [Synth 8-350] instance 'OSERDESE2_27' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15542]
+WARNING: [Synth 8-350] instance 'OSERDESE2_28' of module 'OSERDESE2' requires 27 connections, but only 17 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15564]
+WARNING: [Synth 8-350] instance 'OSERDESE2_29' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15597]
+INFO: [Synth 8-6157] synthesizing module 'ISERDESE2' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:25967]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: IFD - type: string 
+	Parameter IS_CLKB_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIVP_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_OCLKB_INVERTED bound to: 1'b0 
+	Parameter IS_OCLK_INVERTED bound to: 1'b0 
+	Parameter NUM_CE bound to: 1 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'ISERDESE2' (6#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:25967]
+WARNING: [Synth 8-350] instance 'ISERDESE2' of module 'ISERDESE2' requires 28 connections, but only 15 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15623]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22477]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string 
+	Parameter IDELAY_TYPE bound to: VARIABLE - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_DATAIN_INVERTED bound to: 1'b0 
+	Parameter IS_IDATAIN_INVERTED bound to: 1'b0 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: float 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+	Parameter SIM_DELAY_D bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (7#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22477]
+WARNING: [Synth 8-350] instance 'IDELAYE2' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15650]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (8#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+WARNING: [Synth 8-350] instance 'OSERDESE2_30' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15673]
+WARNING: [Synth 8-350] instance 'ISERDESE2_1' of module 'ISERDESE2' requires 28 connections, but only 15 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15699]
+WARNING: [Synth 8-350] instance 'IDELAYE2_1' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15726]
+WARNING: [Synth 8-350] instance 'OSERDESE2_31' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15749]
+WARNING: [Synth 8-350] instance 'ISERDESE2_2' of module 'ISERDESE2' requires 28 connections, but only 15 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15775]
+WARNING: [Synth 8-350] instance 'IDELAYE2_2' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15802]
+WARNING: [Synth 8-350] instance 'OSERDESE2_32' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15825]
+WARNING: [Synth 8-350] instance 'ISERDESE2_3' of module 'ISERDESE2' requires 28 connections, but only 15 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15851]
+WARNING: [Synth 8-350] instance 'IDELAYE2_3' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15878]
+WARNING: [Synth 8-350] instance 'OSERDESE2_33' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15901]
+WARNING: [Synth 8-350] instance 'ISERDESE2_4' of module 'ISERDESE2' requires 28 connections, but only 15 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15927]
+WARNING: [Synth 8-350] instance 'IDELAYE2_4' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15954]
+WARNING: [Synth 8-350] instance 'OSERDESE2_34' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:15977]
+WARNING: [Synth 8-350] instance 'ISERDESE2_5' of module 'ISERDESE2' requires 28 connections, but only 15 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16003]
+WARNING: [Synth 8-350] instance 'IDELAYE2_5' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16030]
+WARNING: [Synth 8-350] instance 'OSERDESE2_35' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16053]
+WARNING: [Synth 8-350] instance 'ISERDESE2_6' of module 'ISERDESE2' requires 28 connections, but only 15 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16079]
+WARNING: [Synth 8-350] instance 'IDELAYE2_6' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16106]
+WARNING: [Synth 8-350] instance 'OSERDESE2_36' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16129]
+WARNING: [Synth 8-350] instance 'ISERDESE2_7' of module 'ISERDESE2' requires 28 connections, but only 15 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16155]
+WARNING: [Synth 8-350] instance 'IDELAYE2_7' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16182]
+WARNING: [Synth 8-350] instance 'OSERDESE2_37' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16205]
+WARNING: [Synth 8-350] instance 'ISERDESE2_8' of module 'ISERDESE2' requires 28 connections, but only 15 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16231]
+WARNING: [Synth 8-350] instance 'IDELAYE2_8' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16258]
+WARNING: [Synth 8-350] instance 'OSERDESE2_38' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16281]
+WARNING: [Synth 8-350] instance 'ISERDESE2_9' of module 'ISERDESE2' requires 28 connections, but only 15 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16307]
+WARNING: [Synth 8-350] instance 'IDELAYE2_9' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16334]
+WARNING: [Synth 8-350] instance 'OSERDESE2_39' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16357]
+WARNING: [Synth 8-350] instance 'ISERDESE2_10' of module 'ISERDESE2' requires 28 connections, but only 15 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16383]
+WARNING: [Synth 8-350] instance 'IDELAYE2_10' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16410]
+WARNING: [Synth 8-350] instance 'OSERDESE2_40' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16433]
+WARNING: [Synth 8-350] instance 'ISERDESE2_11' of module 'ISERDESE2' requires 28 connections, but only 15 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16459]
+WARNING: [Synth 8-350] instance 'IDELAYE2_11' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16486]
+WARNING: [Synth 8-350] instance 'OSERDESE2_41' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16509]
+WARNING: [Synth 8-350] instance 'ISERDESE2_12' of module 'ISERDESE2' requires 28 connections, but only 15 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16535]
+WARNING: [Synth 8-350] instance 'IDELAYE2_12' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16562]
+WARNING: [Synth 8-350] instance 'OSERDESE2_42' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16585]
+WARNING: [Synth 8-350] instance 'ISERDESE2_13' of module 'ISERDESE2' requires 28 connections, but only 15 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16611]
+WARNING: [Synth 8-350] instance 'IDELAYE2_13' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16638]
+WARNING: [Synth 8-350] instance 'OSERDESE2_43' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16661]
+WARNING: [Synth 8-350] instance 'ISERDESE2_14' of module 'ISERDESE2' requires 28 connections, but only 15 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16687]
+WARNING: [Synth 8-350] instance 'IDELAYE2_14' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16714]
+WARNING: [Synth 8-350] instance 'OSERDESE2_44' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16737]
+WARNING: [Synth 8-350] instance 'ISERDESE2_15' of module 'ISERDESE2' requires 28 connections, but only 15 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16763]
+WARNING: [Synth 8-350] instance 'IDELAYE2_15' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16790]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20408]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (9#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20408]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_BASE' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41124]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 8 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 8.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 90.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_BASE' (10#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:41124]
+WARNING: [Synth 8-350] instance 'PLLE2_BASE' of module 'PLLE2_BASE' requires 12 connections, but only 6 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16949]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:31641]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (11#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:31641]
+INFO: [Synth 8-6157] synthesizing module 'OBUF' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:28230]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUF' (12#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:28230]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2__parameterized0' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22477]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: FALSE - type: string 
+	Parameter IDELAY_TYPE bound to: FIXED - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_DATAIN_INVERTED bound to: 1'b0 
+	Parameter IS_IDATAIN_INVERTED bound to: 1'b0 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: float 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+	Parameter SIM_DELAY_D bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2__parameterized0' (12#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22477]
+WARNING: [Synth 8-350] instance 'IDELAYE2_16' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17077]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22342]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (13#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22342]
+WARNING: [Synth 8-350] instance 'IDDR' of module 'IDDR' requires 7 connections, but only 6 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17089]
+WARNING: [Synth 8-350] instance 'IDELAYE2_17' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17105]
+WARNING: [Synth 8-350] instance 'IDELAYE2_18' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17134]
+WARNING: [Synth 8-350] instance 'IDELAYE2_19' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17163]
+WARNING: [Synth 8-350] instance 'IDELAYE2_20' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17192]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26717]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 30.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 2 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 2 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (14#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26717]
+WARNING: [Synth 8-350] instance 'MMCME2_ADV' of module 'MMCME2_ADV' requires 33 connections, but only 14 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17429]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (14#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+WARNING: [Synth 8-350] instance 'OSERDESE2_45' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17462]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized1' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized1' (14#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+WARNING: [Synth 8-350] instance 'OSERDESE2_46' of module 'OSERDESE2' requires 27 connections, but only 17 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17487]
+WARNING: [Synth 8-350] instance 'OSERDESE2_47' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17519]
+WARNING: [Synth 8-350] instance 'OSERDESE2_48' of module 'OSERDESE2' requires 27 connections, but only 17 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17544]
+WARNING: [Synth 8-350] instance 'OSERDESE2_49' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17576]
+WARNING: [Synth 8-350] instance 'OSERDESE2_50' of module 'OSERDESE2' requires 27 connections, but only 17 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17601]
+WARNING: [Synth 8-350] instance 'OSERDESE2_51' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17633]
+WARNING: [Synth 8-350] instance 'OSERDESE2_52' of module 'OSERDESE2' requires 27 connections, but only 17 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17658]
+INFO: [Synth 8-6157] synthesizing module 'VexRiscv' [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:1181]
+INFO: [Synth 8-6157] synthesizing module 'InstructionCache' [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:53]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_isIoAccess_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:325]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_allowRead_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:326]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_allowWrite_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:327]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionCache' (15#1) [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:53]
+INFO: [Synth 8-6157] synthesizing module 'DataCache' [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:342]
+WARNING: [Synth 8-6014] Unused sequential element tagsWriteLastCmd_valid_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:1060]
+WARNING: [Synth 8-6014] Unused sequential element tagsWriteLastCmd_payload_way_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:1061]
+WARNING: [Synth 8-6014] Unused sequential element tagsWriteLastCmd_payload_address_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:1062]
+WARNING: [Synth 8-6014] Unused sequential element tagsWriteLastCmd_payload_data_valid_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:1063]
+WARNING: [Synth 8-6014] Unused sequential element tagsWriteLastCmd_payload_data_error_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:1064]
+WARNING: [Synth 8-6014] Unused sequential element tagsWriteLastCmd_payload_data_address_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:1065]
+WARNING: [Synth 8-6014] Unused sequential element stageB_mmuRsp_allowExecute_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:1094]
+WARNING: [Synth 8-6014] Unused sequential element stageB_tagsReadRsp_0_valid_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:1099]
+WARNING: [Synth 8-6014] Unused sequential element stageB_tagsReadRsp_0_address_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:1101]
+INFO: [Synth 8-6155] done synthesizing module 'DataCache' (16#1) [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:342]
+WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_rspCounter_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:6356]
+WARNING: [Synth 8-6014] Unused sequential element DBusCachedPlugin_rspCounter_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:6360]
+WARNING: [Synth 8-6014] Unused sequential element CsrPlugin_lastStageWasWfi_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:6415]
+WARNING: [Synth 8-6014] Unused sequential element _zz_123__reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:4693]
+WARNING: [Synth 8-6014] Unused sequential element _zz_130__reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:4701]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_shared_pteBuffer_V_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:6949]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_shared_pteBuffer_R_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:6950]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_shared_pteBuffer_W_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:6951]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_shared_pteBuffer_X_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:6952]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_shared_pteBuffer_U_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:6953]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_shared_pteBuffer_G_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:6954]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_shared_pteBuffer_A_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:6955]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_shared_pteBuffer_D_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:6956]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_shared_pteBuffer_RSW_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:6957]
+WARNING: [Synth 8-6014] Unused sequential element CsrPlugin_mcycle_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:7093]
+WARNING: [Synth 8-6014] Unused sequential element CsrPlugin_minstret_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:7095]
+WARNING: [Synth 8-6014] Unused sequential element decode_to_execute_FORMAL_PC_NEXT_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:4038]
+WARNING: [Synth 8-6014] Unused sequential element execute_to_memory_FORMAL_PC_NEXT_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:4037]
+WARNING: [Synth 8-6014] Unused sequential element memory_to_writeBack_FORMAL_PC_NEXT_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:4036]
+WARNING: [Synth 8-6014] Unused sequential element CsrPlugin_mtvec_mode_reg was removed.  [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:7407]
+INFO: [Synth 8-6155] done synthesizing module 'VexRiscv' (17#1) [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:1181]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV__parameterized0' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26717]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 12.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 12.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 90.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 6 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 12 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV__parameterized0' (17#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26717]
+WARNING: [Synth 8-350] instance 'MMCME2_ADV_1' of module 'MMCME2_ADV' requires 33 connections, but only 9 given [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17731]
+INFO: [Synth 8-6157] synthesizing module 'FDPE' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_PRE_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDPE' (18#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
+WARNING: [Synth 8-6014] Unused sequential element main_ethmac_rx_converter_converter_source_payload_valid_token_count_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:10471]
+WARNING: [Synth 8-6014] Unused sequential element rdata_buffer_first_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:6599]
+WARNING: [Synth 8-6014] Unused sequential element rdata_buffer_last_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:6600]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_bankmachine0_cmd_buffer_first_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4786]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_bankmachine0_cmd_buffer_last_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4787]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_bankmachine1_cmd_buffer_first_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4954]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_bankmachine1_cmd_buffer_last_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4955]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_bankmachine2_cmd_buffer_first_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:5122]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_bankmachine2_cmd_buffer_last_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:5123]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_bankmachine3_cmd_buffer_first_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:5290]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_bankmachine3_cmd_buffer_last_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:5291]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_bankmachine4_cmd_buffer_first_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:5458]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_bankmachine4_cmd_buffer_last_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:5459]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_bankmachine5_cmd_buffer_first_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:5626]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_bankmachine5_cmd_buffer_last_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:5627]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_bankmachine6_cmd_buffer_first_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:5794]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_bankmachine6_cmd_buffer_last_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:5795]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_bankmachine7_cmd_buffer_first_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:5962]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_bankmachine7_cmd_buffer_last_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:5963]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_dfi_p0_cs_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4257]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_dfi_p0_rddata_en_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4267]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_dfi_p0_wrdata_en_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4265]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_dfi_p1_cs_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4273]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_dfi_p1_rddata_en_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4283]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_dfi_p1_wrdata_en_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4281]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_dfi_p2_cs_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4289]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_dfi_p2_wrdata_en_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4297]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_dfi_p3_cs_n_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4305]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_dfi_p3_rddata_en_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4315]
+WARNING: [Synth 8-6014] Unused sequential element builder_rbank_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13004]
+WARNING: [Synth 8-6014] Unused sequential element builder_wbank_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13007]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_vexriscv_time_cmp_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13407]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_ctrl_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13452]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_a7ddrphy_half_sys8x_taps_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13485]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_a7ddrphy_dly_sel_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13489]
+WARNING: [Synth 8-6014] Unused sequential element main_ethmac_writer_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13588]
+WARNING: [Synth 8-6014] Unused sequential element main_ethmac_reader_slot_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13592]
+WARNING: [Synth 8-6014] Unused sequential element main_ethmac_reader_length_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13599]
+WARNING: [Synth 8-6014] Unused sequential element main_ethmac_reader_eventmanager_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13603]
+WARNING: [Synth 8-6014] Unused sequential element main_ethphy_reset_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13621]
+WARNING: [Synth 8-6014] Unused sequential element main_ethphy_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13625]
+WARNING: [Synth 8-6014] Unused sequential element underflow_enable_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13766]
+WARNING: [Synth 8-6014] Unused sequential element initiator_enable_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13770]
+WARNING: [Synth 8-6014] Unused sequential element initiator_csrstorage0_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13777]
+WARNING: [Synth 8-6014] Unused sequential element initiator_csrstorage1_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13784]
+WARNING: [Synth 8-6014] Unused sequential element initiator_csrstorage2_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13791]
+WARNING: [Synth 8-6014] Unused sequential element initiator_csrstorage3_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13798]
+WARNING: [Synth 8-6014] Unused sequential element initiator_csrstorage4_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13805]
+WARNING: [Synth 8-6014] Unused sequential element initiator_csrstorage5_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13812]
+WARNING: [Synth 8-6014] Unused sequential element initiator_csrstorage6_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13819]
+WARNING: [Synth 8-6014] Unused sequential element initiator_csrstorage7_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13826]
+WARNING: [Synth 8-6014] Unused sequential element initiator_csrstorage8_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13839]
+WARNING: [Synth 8-6014] Unused sequential element initiator_csrstorage9_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13852]
+WARNING: [Synth 8-6014] Unused sequential element dmareader_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13865]
+WARNING: [Synth 8-6014] Unused sequential element s7hdmioutclocking_mmcm_reset_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13869]
+WARNING: [Synth 8-6014] Unused sequential element s7hdmioutclocking_mmcm_adr_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13873]
+WARNING: [Synth 8-6014] Unused sequential element s7hdmioutclocking_mmcm_dat_w_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:13880]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14048]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_phaseinjector0_command_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14052]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_phaseinjector0_address_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14059]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_phaseinjector0_baddress_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14063]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_phaseinjector0_wrdata_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14076]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_phaseinjector1_command_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14080]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_phaseinjector1_address_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14087]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_phaseinjector1_baddress_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14091]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_phaseinjector1_wrdata_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14104]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_phaseinjector2_command_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14108]
+WARNING: [Synth 8-6014] Unused sequential element main_soclinux_sdram_phaseinjector2_address_re_reg was removed.  [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14115]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4471] merging register 'hdmi_phy_es2_new_c0_reg[1:0]' into 'hdmi_phy_es1_new_c0_reg[1:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:10821]
+INFO: [Synth 8-4471] merging register 'memadr_16_reg[8:0]' into 'memadr_15_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17758]
+INFO: [Synth 8-4471] merging register 'memadr_17_reg[8:0]' into 'memadr_15_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17768]
+INFO: [Synth 8-4471] merging register 'memadr_18_reg[8:0]' into 'memadr_15_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17778]
+INFO: [Synth 8-4471] merging register 'memadr_19_reg[8:0]' into 'memadr_15_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17788]
+INFO: [Synth 8-4471] merging register 'memadr_20_reg[8:0]' into 'memadr_15_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17798]
+INFO: [Synth 8-4471] merging register 'memadr_21_reg[8:0]' into 'memadr_15_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17808]
+INFO: [Synth 8-4471] merging register 'memadr_22_reg[8:0]' into 'memadr_15_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17818]
+INFO: [Synth 8-4471] merging register 'memadr_23_reg[8:0]' into 'memadr_15_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17828]
+INFO: [Synth 8-4471] merging register 'memadr_24_reg[8:0]' into 'memadr_15_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17838]
+INFO: [Synth 8-4471] merging register 'memadr_25_reg[8:0]' into 'memadr_15_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17848]
+INFO: [Synth 8-4471] merging register 'memadr_26_reg[8:0]' into 'memadr_15_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17858]
+INFO: [Synth 8-4471] merging register 'memadr_27_reg[8:0]' into 'memadr_15_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17868]
+INFO: [Synth 8-4471] merging register 'memadr_28_reg[8:0]' into 'memadr_15_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17878]
+INFO: [Synth 8-4471] merging register 'memadr_29_reg[8:0]' into 'memadr_15_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17888]
+INFO: [Synth 8-4471] merging register 'memadr_30_reg[8:0]' into 'memadr_15_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17898]
+INFO: [Synth 8-4471] merging register 'memadr_33_reg[8:0]' into 'memadr_31_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17923]
+INFO: [Synth 8-4471] merging register 'memadr_34_reg[8:0]' into 'memadr_32_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17929]
+INFO: [Synth 8-4471] merging register 'memadr_35_reg[8:0]' into 'memadr_31_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17939]
+INFO: [Synth 8-4471] merging register 'memadr_36_reg[8:0]' into 'memadr_32_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17945]
+INFO: [Synth 8-4471] merging register 'memadr_37_reg[8:0]' into 'memadr_31_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17955]
+INFO: [Synth 8-4471] merging register 'memadr_38_reg[8:0]' into 'memadr_32_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17961]
+INFO: [Synth 8-4471] merging register 'memadr_41_reg[8:0]' into 'memadr_39_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17987]
+INFO: [Synth 8-4471] merging register 'memadr_42_reg[8:0]' into 'memadr_40_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17993]
+INFO: [Synth 8-4471] merging register 'memadr_43_reg[8:0]' into 'memadr_39_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:18003]
+INFO: [Synth 8-4471] merging register 'memadr_44_reg[8:0]' into 'memadr_40_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:18009]
+INFO: [Synth 8-4471] merging register 'memadr_45_reg[8:0]' into 'memadr_39_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:18019]
+INFO: [Synth 8-4471] merging register 'memadr_46_reg[8:0]' into 'memadr_40_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:18025]
+WARNING: [Synth 8-3936] Found unconnected internal register 'main_ethmac_tx_converter_converter_source_payload_data_reg' and it is trimmed from '10' to '9' bits. [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:7298]
+INFO: [Synth 8-4471] merging register 'memadr_1_reg[8:0]' into 'memadr_15_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:16924]
+INFO: [Synth 8-4471] merging register 'memadr_39_reg[8:0]' into 'memadr_31_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17971]
+INFO: [Synth 8-4471] merging register 'memadr_40_reg[8:0]' into 'memadr_32_reg[8:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17977]
+INFO: [Synth 8-4471] merging register 'main_ethphy_rx_ctl_d_reg' into 'main_ethphy_source_valid_reg' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:6806]
+INFO: [Synth 8-4471] merging register 'hdmi_phy_es0_ce_reg' into 's7hdmioutclocking_ce_reg' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:10708]
+INFO: [Synth 8-4471] merging register 'hdmi_phy_es1_new_de0_reg' into 'hdmi_phy_es0_new_de0_reg' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:10773]
+INFO: [Synth 8-4471] merging register 'hdmi_phy_es1_ce_reg' into 's7hdmioutclocking_ce_reg' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:10757]
+INFO: [Synth 8-4471] merging register 'hdmi_phy_es2_new_de0_reg' into 'hdmi_phy_es0_new_de0_reg' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:10822]
+INFO: [Synth 8-4471] merging register 'hdmi_phy_es2_new_c1_reg[1:0]' into 'hdmi_phy_es1_new_c1_reg[1:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:10823]
+INFO: [Synth 8-4471] merging register 'hdmi_phy_es2_ce_reg' into 's7hdmioutclocking_ce_reg' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:10806]
+INFO: [Synth 8-4471] merging register 'main_soclinux_a7ddrphy_dfi_p1_rddata_valid_reg' into 'main_soclinux_a7ddrphy_dfi_p0_rddata_valid_reg' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4221]
+INFO: [Synth 8-4471] merging register 'main_soclinux_a7ddrphy_dfi_p2_rddata_valid_reg' into 'main_soclinux_a7ddrphy_dfi_p0_rddata_valid_reg' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4237]
+INFO: [Synth 8-4471] merging register 'main_soclinux_a7ddrphy_dfi_p3_rddata_valid_reg' into 'main_soclinux_a7ddrphy_dfi_p0_rddata_valid_reg' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4253]
+INFO: [Synth 8-4471] merging register 'main_soclinux_a7ddrphy_oe_dq_reg' into 'main_soclinux_a7ddrphy_oe_dqs_reg' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:11295]
+INFO: [Synth 8-4471] merging register 'hdmi_phy_es1_new_de1_reg' into 'hdmi_phy_es0_new_de1_reg' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:10775]
+INFO: [Synth 8-4471] merging register 'hdmi_phy_es2_new_de1_reg' into 'hdmi_phy_es0_new_de1_reg' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:10824]
+INFO: [Synth 8-4471] merging register 'hdmi_phy_es2_new_c2_reg[1:0]' into 'hdmi_phy_es1_new_c2_reg[1:0]' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:10825]
+INFO: [Synth 8-4471] merging register 'hdmi_phy_es1_new_de2_reg' into 'hdmi_phy_es0_new_de2_reg' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:10777]
+INFO: [Synth 8-4471] merging register 'hdmi_phy_es2_new_de2_reg' into 'hdmi_phy_es0_new_de2_reg' [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:10826]
+INFO: [Synth 8-6155] done synthesizing module 'top' (19#1) [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[31]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[30]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[29]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[28]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[27]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[26]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[25]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[24]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[23]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[22]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[21]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[20]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[19]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[18]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[17]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[16]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[15]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[14]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[13]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[12]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_memory_mmuBus_rsp_allowExecute
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_memory_mmuBus_busy
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_isUser
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[31]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[30]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[29]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[28]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[27]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[26]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[25]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[24]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[23]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[22]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[21]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[20]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[19]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[18]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[17]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[16]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[15]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[14]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[13]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[12]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[11]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[10]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[9]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[8]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[7]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[6]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[5]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[4]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[3]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[2]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[1]
+WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_writeBack_address[0]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_isValid
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[31]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[30]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[29]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[28]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[27]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[26]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[25]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[24]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[23]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[22]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[21]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[20]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[19]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[18]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[17]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[16]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[15]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[14]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[13]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[12]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[1]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_prefetch_pc[0]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_fetch_mmuBus_rsp_isIoAccess
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_fetch_mmuBus_rsp_allowRead
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_fetch_mmuBus_rsp_allowWrite
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_isValid
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_pc[31]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_pc[30]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_pc[29]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_pc[28]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_pc[27]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_pc[26]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_pc[25]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_pc[24]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_pc[23]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_pc[22]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_pc[21]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_pc[20]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_pc[19]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_pc[18]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_pc[17]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_pc[16]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_pc[15]
+WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_pc[14]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1503.934 ; gain = 206.547 ; free physical = 2914 ; free virtual = 12697
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1503.934 ; gain = 206.547 ; free physical = 2947 ; free virtual = 12730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1503.934 ; gain = 206.547 ; free physical = 2947 ; free virtual = 12730
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.xdc:321]
+Finished Parsing XDC File [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1860.934 ; gain = 0.000 ; free physical = 2553 ; free virtual = 12376
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1860.934 ; gain = 0.000 ; free physical = 2553 ; free virtual = 12376
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+  OBUFDS => OBUFDS: 4 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  OBUFTDS => OBUFTDS_DUAL_BUF (INV, OBUFTDS, OBUFTDS): 2 instances
+  PLLE2_BASE => PLLE2_ADV: 1 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1860.934 ; gain = 0.000 ; free physical = 2553 ; free virtual = 12376
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1860.934 ; gain = 0.000 ; free physical = 2553 ; free virtual = 12376
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1860.934 ; gain = 563.547 ; free physical = 2673 ; free virtual = 12505
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1860.934 ; gain = 563.547 ; free physical = 2673 ; free virtual = 12505
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1860.934 ; gain = 563.547 ; free physical = 2615 ; free virtual = 12492
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "lineLoader_fire" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-3936] Found unconnected internal register 'MmuPlugin_shared_pteBuffer_PPN1_reg' and it is trimmed from '12' to '10' bits. [/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v:6959]
+INFO: [Synth 8-5544] ROM "iBusWishbone_CTI" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "memory_MulDivIterativePlugin_div_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decode_REGFILE_WRITE_VALID" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "iBusWishbone_CTI" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "memory_MulDivIterativePlugin_div_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decode_REGFILE_WRITE_VALID" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "CsrPlugin_exceptionPortCtrl_exceptionTargetPrivilegeUncapped" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CsrPlugin_exceptionPortCtrl_exceptionTargetPrivilegeUncapped" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CsrPlugin_exceptionPortCtrl_exceptionTargetPrivilegeUncapped" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CsrPlugin_exceptionPortCtrl_exceptionTargetPrivilegeUncapped" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CsrPlugin_exceptionPortCtrl_exceptionTargetPrivilegeUncapped" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CsrPlugin_exceptionPortCtrl_exceptionTargetPrivilegeUncapped" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CsrPlugin_exceptionPortCtrl_exceptionTargetPrivilegeUncapped" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CsrPlugin_exceptionPortCtrl_exceptionTargetPrivilegeUncapped" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CsrPlugin_exceptionPortCtrl_exceptionTargetPrivilegeUncapped" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CsrPlugin_exceptionPortCtrl_exceptionTargetPrivilegeUncapped" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CsrPlugin_exceptionPortCtrl_exceptionTargetPrivilegeUncapped" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CsrPlugin_exceptionPortCtrl_exceptionTargetPrivilegeUncapped" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MmuPlugin_dBusAccess_cmd_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "_zz_376_" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dBusWishbone_CTI0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MmuPlugin_shared_state_1_" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CsrPlugin_mstatus_MIE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CsrPlugin_sstatus_SIE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CsrPlugin_selfException_payload_code" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IBusCachedPlugin_decodeExceptionPort_payload_code" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DBusCachedPlugin_exceptionBus_payload_code0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CsrPlugin_interrupt_code" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "execute_to_memory_BRANCH_CALC" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3988]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4780]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:5284]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:5452]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:5620]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:5788]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:5956]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:5116]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:8065]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:8040]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:4948]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:3958]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:10730]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:10779]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:10828]
+WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_2_reg' and it is trimmed from '10' to '8' bits. [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14872]
+WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_20_reg' and it is trimmed from '34' to '24' bits. [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:17412]
+WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_4_reg' and it is trimmed from '10' to '8' bits. [/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.v:14889]
+INFO: [Synth 8-5545] ROM "main_ethmac_writer_counter_ce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "litedramnativeport0_cmd_valid" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "builder_liteethmacgap_next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "timinggenerator_hactive" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "timinggenerator_vactive" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "main_soclinux_bus_wishbone_ack" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_bus_wishbone_ack" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_uart_phy_sink_ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_uart_phy_sink_ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_uart_phy_source_valid" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "main_soclinux_sdram_cmd_payload_cas" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "main_soclinux_sdram_sequencer_done1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "main_ethmac_writer_inc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "builder_liteethmacsramwriter_next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "main_ethmac_writer_counter_ce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "litedramnativeport0_cmd_valid" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "builder_liteethmacgap_next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "timinggenerator_hactive" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "timinggenerator_vactive" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "main_soclinux_bus_wishbone_ack" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_bus_wishbone_ack" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_uart_phy_sink_ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_uart_phy_sink_ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_uart_phy_source_valid" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "main_soclinux_sdram_cmd_payload_cas" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "main_soclinux_sdram_sequencer_done1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "main_ethmac_writer_inc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "builder_liteethmacsramwriter_next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "builder_liteethmacsramwriter_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_port_wdata_payload_we" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_a7ddrphy_dqs_serdes_pattern" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_ethmac_preamble_inserter_source_payload_data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_we" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_port_cmd_valid" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_ethmac_reader_source_source_payload_last_be" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_ethmac_reader_source_source_valid" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_ethmac_writer_slot_ce" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_ic_reset" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_ethmac_crc32_checker_crc_reset" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "builder_liteethmaccrc32checker_next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_ethmac_rx_converter_converter_source_payload_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_ethmac_preamble_inserter_clr_cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "builder_liteethmacpreambleinserter_next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_ethmac_crc32_inserter_is_ongoing1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_ethmac_crc32_inserter_reset" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "builder_liteethmaccrc32inserter_next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_ethmac_padding_inserter_counter" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_ethmac_padding_inserter_counter" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "builder_sync_f_array_muxed0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "builder_sync_f_array_muxed1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_bus_wishbone_dat_r" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_counter" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_counter" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_uart_phy_phase_accumulator_rx" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_uart_phy_phase_accumulator_rx" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_cmd_ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_cmd_payload_a" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "builder_refresher_next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine0_row_close" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_cmd_valid" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_steerer_sel1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_en1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine0_twtpcon_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine0_twtpcon_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine0_trccon_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine0_trccon_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine0_trascon_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine0_trascon_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "builder_bankmachine0_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine1_row_close" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine1_twtpcon_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine1_twtpcon_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine1_trccon_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine1_trccon_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine1_trascon_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine1_trascon_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "builder_bankmachine1_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine2_row_close" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine2_twtpcon_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine2_twtpcon_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine2_trccon_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine2_trccon_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine2_trascon_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine2_trascon_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "builder_bankmachine2_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "main_soclinux_sdram_bankmachine3_row_close" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-802] inferred FSM for state register 'builder_liteethmaccrc32checker_state_reg' in module 'top'
+INFO: [Synth 8-802] inferred FSM for state register 'builder_liteethmacpreambleinserter_state_reg' in module 'top'
+INFO: [Synth 8-802] inferred FSM for state register 'builder_liteethmaccrc32inserter_state_reg' in module 'top'
+INFO: [Synth 8-802] inferred FSM for state register 'builder_refresher_state_reg' in module 'top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'builder_liteethmaccrc32checker_state_reg' using encoding 'sequential' in module 'top'
+INFO: [Synth 8-6430] The Block RAM storage_12_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-6430] The Block RAM mem_grain0_1_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-6430] The Block RAM mem_grain1_1_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-6430] The Block RAM mem_grain2_1_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-6430] The Block RAM mem_grain3_1_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-6430] The Block RAM mem_grain0_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-6430] The Block RAM mem_grain1_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-6430] The Block RAM mem_grain2_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-6430] The Block RAM mem_grain3_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-6430] The Block RAM storage_11_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'builder_liteethmacpreambleinserter_state_reg' using encoding 'sequential' in module 'top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+*
+                 iSTATE0 |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'builder_liteethmaccrc32inserter_state_reg' using encoding 'one-hot' in module 'top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+*
+                 iSTATE0 |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'builder_refresher_state_reg' using encoding 'one-hot' in module 'top'
+WARNING: [Synth 8-6841] Block RAM (mem_1_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (13) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute "ram_decomp = power" if BWWE is desired.)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1860.934 ; gain = 563.547 ; free physical = 2660 ; free virtual = 12485
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     34 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 3     
+	   3 Input     33 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     27 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 5     
+	   2 Input      6 Bit       Adders := 3     
+	   5 Input      6 Bit       Adders := 6     
+	   4 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 5     
+	   2 Input      4 Bit       Adders := 20    
+	   8 Input      4 Bit       Adders := 6     
+	   9 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 69    
+	   5 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 13    
+	   3 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 9     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+	   2 Input      7 Bit         XORs := 4     
+	   2 Input      5 Bit         XORs := 2     
+	   2 Input      3 Bit         XORs := 2     
+	   2 Input      2 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 30    
+	   4 Input      1 Bit         XORs := 19    
+	   3 Input      1 Bit         XORs := 27    
+	   5 Input      1 Bit         XORs := 18    
+	   6 Input      1 Bit         XORs := 5     
+	   7 Input      1 Bit         XORs := 4     
+	   8 Input      1 Bit         XORs := 4     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               65 Bit    Registers := 1     
+	               64 Bit    Registers := 3     
+	               40 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 72    
+	               30 Bit    Registers := 2     
+	               27 Bit    Registers := 1     
+	               24 Bit    Registers := 3     
+	               22 Bit    Registers := 10    
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 18    
+	               15 Bit    Registers := 17    
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 9     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 42    
+	                9 Bit    Registers := 42    
+	                8 Bit    Registers := 38    
+	                7 Bit    Registers := 15    
+	                6 Bit    Registers := 13    
+	                5 Bit    Registers := 13    
+	                4 Bit    Registers := 55    
+	                3 Bit    Registers := 74    
+	                2 Bit    Registers := 47    
+	                1 Bit    Registers := 395   
++---RAMs : 
+	             256K Bit         RAMs := 1     
+	             128K Bit         RAMs := 1     
+	              32K Bit         RAMs := 1     
+	              17K Bit         RAMs := 1     
+	              12K Bit         RAMs := 1     
+	              11K Bit         RAMs := 2     
+	               8K Bit         RAMs := 4     
+	               4K Bit         RAMs := 16    
+	               2K Bit         RAMs := 13    
+	             1024 Bit         RAMs := 1     
+	              320 Bit         RAMs := 1     
+	              184 Bit         RAMs := 8     
+	              160 Bit         RAMs := 2     
+	              104 Bit         RAMs := 1     
+	               66 Bit         RAMs := 1     
+	               40 Bit         RAMs := 1     
+	               24 Bit         RAMs := 1     
+	               16 Bit         RAMs := 1     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 2     
+	   4 Input    128 Bit        Muxes := 2     
+	   3 Input    128 Bit        Muxes := 1     
+	   2 Input     40 Bit        Muxes := 1     
+	   4 Input     40 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 112   
+	   4 Input     32 Bit        Muxes := 11    
+	   3 Input     32 Bit        Muxes := 4     
+	  29 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   3 Input     30 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 3     
+	   4 Input     25 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 8     
+	   3 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 12    
+	   4 Input     15 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 14    
+	   4 Input     10 Bit        Muxes := 6     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 10    
+	  10 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 2     
+	  31 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 6     
+	   2 Input      6 Bit        Muxes := 14    
+	   2 Input      5 Bit        Muxes := 2     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 16    
+	   7 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 8     
+	   3 Input      3 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 50    
+	   4 Input      3 Bit        Muxes := 8     
+	   7 Input      3 Bit        Muxes := 13    
+	   6 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 62    
+	   3 Input      2 Bit        Muxes := 14    
+	   4 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	  12 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 453   
+	  29 Input      1 Bit        Muxes := 15    
+	   3 Input      1 Bit        Muxes := 38    
+	   7 Input      1 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 42    
+	   6 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 12    
+	   9 Input      1 Bit        Muxes := 80    
+	  12 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     27 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 1     
+	   5 Input      6 Bit       Adders := 6     
+	   4 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 5     
+	   2 Input      4 Bit       Adders := 19    
+	   8 Input      4 Bit       Adders := 6     
+	   9 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 65    
+	   5 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 11    
+	   3 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 8     
++---XORs : 
+	   2 Input      7 Bit         XORs := 4     
+	   2 Input      5 Bit         XORs := 2     
+	   2 Input      3 Bit         XORs := 2     
+	   2 Input      2 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 28    
+	   4 Input      1 Bit         XORs := 19    
+	   3 Input      1 Bit         XORs := 27    
+	   5 Input      1 Bit         XORs := 18    
+	   6 Input      1 Bit         XORs := 5     
+	   7 Input      1 Bit         XORs := 4     
+	   8 Input      1 Bit         XORs := 4     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               64 Bit    Registers := 3     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 27    
+	               27 Bit    Registers := 1     
+	               24 Bit    Registers := 3     
+	               22 Bit    Registers := 8     
+	               16 Bit    Registers := 18    
+	               15 Bit    Registers := 17    
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 9     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 6     
+	                9 Bit    Registers := 42    
+	                8 Bit    Registers := 33    
+	                7 Bit    Registers := 15    
+	                6 Bit    Registers := 11    
+	                5 Bit    Registers := 12    
+	                4 Bit    Registers := 47    
+	                3 Bit    Registers := 65    
+	                2 Bit    Registers := 27    
+	                1 Bit    Registers := 198   
++---RAMs : 
+	             256K Bit         RAMs := 1     
+	             128K Bit         RAMs := 1     
+	              17K Bit         RAMs := 1     
+	              12K Bit         RAMs := 1     
+	              11K Bit         RAMs := 2     
+	               4K Bit         RAMs := 16    
+	               2K Bit         RAMs := 11    
+	              320 Bit         RAMs := 1     
+	              184 Bit         RAMs := 8     
+	              160 Bit         RAMs := 2     
+	              104 Bit         RAMs := 1     
+	               66 Bit         RAMs := 1     
+	               40 Bit         RAMs := 1     
+	               24 Bit         RAMs := 1     
+	               16 Bit         RAMs := 1     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 2     
+	   4 Input    128 Bit        Muxes := 2     
+	   3 Input    128 Bit        Muxes := 1     
+	   2 Input     40 Bit        Muxes := 1     
+	   4 Input     40 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 34    
+	   5 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 1     
+	   4 Input     25 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 2     
+	   2 Input     22 Bit        Muxes := 8     
+	   3 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 12    
+	   4 Input     15 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 9     
+	   4 Input     10 Bit        Muxes := 2     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 10    
+	  10 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 2     
+	  31 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 14    
+	   2 Input      5 Bit        Muxes := 2     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 8     
+	   2 Input      3 Bit        Muxes := 46    
+	   4 Input      3 Bit        Muxes := 6     
+	   7 Input      3 Bit        Muxes := 13    
+	   3 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 43    
+	   3 Input      2 Bit        Muxes := 11    
+	   5 Input      2 Bit        Muxes := 2     
+	  12 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 281   
+	   3 Input      1 Bit        Muxes := 25    
+	   5 Input      1 Bit        Muxes := 12    
+	   4 Input      1 Bit        Muxes := 24    
+	   9 Input      1 Bit        Muxes := 80    
+	  12 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 16    
+Module InstructionCache 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               22 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---RAMs : 
+	              32K Bit         RAMs := 1     
+	               2K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module DataCache 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               22 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 24    
++---RAMs : 
+	               8K Bit         RAMs := 4     
+	               2K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 10    
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 27    
+Module VexRiscv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     34 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               65 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 36    
+	               30 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	               10 Bit    Registers := 36    
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 18    
+	                1 Bit    Registers := 163   
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 67    
+	   3 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 8     
+	  29 Input     32 Bit        Muxes := 1     
+	   3 Input     30 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 4     
+	   4 Input     10 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 7     
+	   7 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 19    
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 138   
+	  29 Input      1 Bit        Muxes := 15    
+	   3 Input      1 Bit        Muxes := 13    
+	   7 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 18    
+	   6 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "main_soclinux_sdram_sequencer_done1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "main_soclinux_sdram_cmd_payload_cas" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "main_ethmac_writer_counter_ce" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "timinggenerator_hactive" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "timinggenerator_vactive" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+1
+1
+INFO: [Common 17-83] Releasing license: Synthesis
+371 Infos, 308 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+INFO: [Common 17-344] 'source' was cancelled
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 11 09:33:53 2019...

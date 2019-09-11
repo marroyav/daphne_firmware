@@ -2,36 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Aug 29 11:03:32 2019
-# Process ID: 17006
-# Current directory: /home/mam/fpga/linux/linux-on-litex-vexriscv/build/nexys_video/gateware
-# Command line: vivado
-# Log file: /home/mam/fpga/linux/linux-on-litex-vexriscv/build/nexys_video/gateware/vivado.log
-# Journal file: /home/mam/fpga/linux/linux-on-litex-vexriscv/build/nexys_video/gateware/vivado.jou
+# Start of session at: Wed Sep 11 11:07:23 2019
+# Process ID: 4734
+# Current directory: /home/mam/fpga/linux/daphne/build/nexys_video/gateware
+# Command line: vivado -mode batch -source top.tcl
+# Log file: /home/mam/fpga/linux/daphne/build/nexys_video/gateware/vivado.log
+# Journal file: /home/mam/fpga/linux/daphne/build/nexys_video/gateware/vivado.jou
 #-----------------------------------------------------------
-start_gui
-open_project /home/mam/fpga/linux/linux-on-litex-vexriscv/build/nexys_video/gateware/top.xpr
-update_compile_order -fileset sources_1
-open_hw
-connect_hw_server
-open_hw_target
-disconnect_hw_server localhost:3121
-connect_hw_server
-open_hw_target
-current_hw_device [get_hw_devices xc7a200t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
-set_property PROGRAM.FILE {/home/mam/fpga/linux/linux-on-litex-vexriscv/build/nexys_video/gateware/top.bin} [get_hw_devices xc7a200t_0]
-program_hw_devices [get_hw_devices xc7a200t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
-set_property PROGRAM.FILE {/home/mam/fpga/linux/linux-on-litex-vexriscv/build/nexys_video/gateware/top.bin} [get_hw_devices xc7a200t_0]
-program_hw_devices [get_hw_devices xc7a200t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
-set_property PROGRAM.FILE {/home/mam/fpga/linux/linux-on-litex-vexriscv/build/nexys_video/gateware/top.bin} [get_hw_devices xc7a200t_0]
-program_hw_devices [get_hw_devices xc7a200t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]

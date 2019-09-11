@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/mam/fpga/linux/linux-on-litex-vexriscv/build/nexys_video/gateware/top.xdc rfile:../top.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/mam/fpga/linux/daphne/build/nexys_video/gateware/top.xdc rfile:../top.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property LOC AA19 [get_ports serial_tx]
 set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]

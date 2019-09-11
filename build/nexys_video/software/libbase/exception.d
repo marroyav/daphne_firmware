@@ -1,6 +1,6 @@
 exception.o: \
  /home/mam/fpga/linux/litex/litex/soc/software/libbase/exception.c \
- /home/mam/fpga/linux/linux-on-litex-vexriscv/build/nexys_video/software/include/generated/csr.h \
+ /home/mam/fpga/linux/daphne/build/nexys_video/software/include/generated/csr.h \
  /home/mam/fpga/linux/litex/litex/soc/software/include/base/stdint.h \
  /home/mam/fpga/linux/litex/litex/soc/software/include/hw/common.h \
  /home/mam/fpga/linux/litex/litex/soc/software/include/base/stdio.h \
@@ -8,7 +8,7 @@ exception.o: \
  /home/mam/fpga/linux/litex/litex/soc/software/include/base/stdarg.h \
  /home/mam/fpga/linux/litex/litex/soc/software/include/base/stdlib.h
 
-/home/mam/fpga/linux/linux-on-litex-vexriscv/build/nexys_video/software/include/generated/csr.h:
+/home/mam/fpga/linux/daphne/build/nexys_video/software/include/generated/csr.h:
 
 /home/mam/fpga/linux/litex/litex/soc/software/include/base/stdint.h:
 

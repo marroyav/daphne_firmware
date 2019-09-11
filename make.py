@@ -2,9 +2,7 @@
 
 import argparse
 import os
-
 from litex.soc.integration.builder import Builder
-
 from soc_linux import SoCLinux
 
 kB = 1024
@@ -22,9 +20,11 @@ class Board:
     def flash(self):
         raise NotImplementedError
 
-# NexysVideo support --------------------------------------------------------------------------------
 
-class NexysVideo(Board):
+
+# Daphne support --------------------------------------------------------------------------------
+
+class Daphne(Board):
     def __init__(self):
         from litex_boards.targets import nexys_video
         Board.__init__(self, nexys_video.EthernetSoC, "serial+framebuffer")
@@ -32,15 +32,14 @@ class NexysVideo(Board):
     def load(self):
         from litex.build.xilinx import VivadoProgrammer
         prog = VivadoProgrammer()
-        prog.load_bitstream("build/nexys_video/gateware/top.bit")
+        prog.load_bitstream("build/daphne/gateware/top.bit")
 
 
 
 # Main ---------------------------------------------------------------------------------------------
 
 supported_boards = {
-    # Xilinx
-    "nexys_video":  NexysVideo,
+    "daphne":  Daphne,
 }
 
 def main():
@@ -66,15 +65,26 @@ def main():
     for board_name in board_names:
         board = supported_boards[board_name]()
         soc_kwargs = {}
-        soc.add_spi_flash()
-        soc.add_constant("SPIFLASH_PAGE_SIZE", board.SPIFLASH_PAGE_SIZE)
-        soc.add_constant("SPIFLASH_SECTOR_SIZE", board.SPIFLASH_SECTOR_SIZE)
-        soc.configure_ethernet(local_ip=args.local_ip, remote_ip=args.remote_ip)
-        soc.add_gpio()
-        soc.add_spi(args.spi_bpw, args.spi_sck_freq)
-        soc.add_i2c()
-        soc.add_xadc()
-        soc.add_framebuffer()
+        if board_name in ["versa_ecp5", "ulx3s"]:
+            soc_kwargs["toolchain"] = "trellis"
+            soc_kwargs["cpu_variant"] = "linux+no-dsp"
+        soc = SoCLinux(board.soc_cls, **soc_kwargs)
+        if "spiflash" in board.soc_capabilities:
+            soc.add_spi_flash()
+            soc.add_constant("SPIFLASH_PAGE_SIZE", board.SPIFLASH_PAGE_SIZE)
+            soc.add_constant("SPIFLASH_SECTOR_SIZE", board.SPIFLASH_SECTOR_SIZE)
+        if "ethernet" in board.soc_capabilities:
+            soc.configure_ethernet(local_ip=args.local_ip, remote_ip=args.remote_ip)
+        if "gpio" in board.soc_capabilities:
+            soc.add_gpio()
+        if "spi" in board.soc_capabilities:
+            soc.add_spi(args.spi_bpw, args.spi_sck_freq)
+        if "i2c" in board.soc_capabilities:
+            soc.add_i2c()
+        if "xadc" in board.soc_capabilities:
+            soc.add_xadc()
+        if "framebuffer" in board.soc_capabilities:
+            soc.add_framebuffer()
         soc.configure_boot()
 
         build_dir = os.path.join("build", board_name)
