@@ -1,0 +1,66 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto 27f014ace1f4491cadae246d60054daf --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'externalResetVector' [/home/mam/fpga/linux/daphne/build/daphne/gateware/top.v:17690]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/IDELAYCTRL.v" Line 27. Module IDELAYCTRL_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/OSERDESE2.v" Line 25. Module OSERDESE2(DATA_RATE_TQ="BUF",DATA_WIDTH=32'sb01000,TRISTATE_WIDTH=32'sb01) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 3. Module B_OSERDESE2(DATA_RATE_TQ="BUF",DATA_WIDTH=32'sb01000,SRVAL_OQ=1'b0,SRVAL_TQ=1'b0,TRISTATE_WIDTH=32'sb01) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 142. Module vioi_tri_outlogic_ship(DATA_RATE_TQ="BUF",DATA_WIDTH=32'sb01000,SRVAL_OQ=1'b0,SRVAL_TQ=1'b0,TRISTATE_WIDTH=32'sb01) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 1239. Module vioi_tri_outlogic_shell has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 4915. Module xil_oserdese2_vl_mod34 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 2474. Module xil_oserdese2_vl_mod13 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 2390. Module xil_oserdese2_vl_mod12 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 2390. Module xil_oserdese2_vl_mod12 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 2864. Module xil_oserdese2_vl_mod16 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 4081. Module xil_oserdese2_vl_mod26 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 4081. Module xil_oserdese2_vl_mod26 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 4081. Module xil_oserdese2_vl_mod26 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 4081. Module xil_oserdese2_vl_mod26 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 3729. Module xil_oserdese2_vl_mod24 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 3558. Module xil_oserdese2_vl_mod21 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 1510. Module xil_oserdese2_vl_mod0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 1510. Module xil_oserdese2_vl_mod0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 1510. Module xil_oserdese2_vl_mod0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 1510. Module xil_oserdese2_vl_mod0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 1510. Module xil_oserdese2_vl_mod0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 1510. Module xil_oserdese2_vl_mod0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 1510. Module xil_oserdese2_vl_mod0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 1510. Module xil_oserdese2_vl_mod0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 3204. Module xil_oserdese2_vl_mod18 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 3. Module B_OSERDESE2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/iserdese2/iserdese2_002.vp" Line 3. Module B_ISERDESE2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 3. Module B_OSERDESE2(DATA_RATE_TQ="BUF",DATA_WIDTH=32'sb01000,SRVAL_OQ=1'b0,SRVAL_TQ=1'b0,TRISTATE_WIDTH=32'sb01) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 3. Module B_OSERDESE2(DATA_WIDTH=32'sb01010,SRVAL_OQ=1'b0,SRVAL_TQ=1'b0,TRISTATE_WIDTH=32'sb01) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 3. Module B_OSERDESE2(DATA_WIDTH=32'sb01010,SERDES_MODE="SLAVE",SRVAL_OQ=1'b0,SRVAL_TQ=1'b0,TRISTATE_WIDTH=32'sb01) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/iserdese2/iserdese2_002.vp" Line 3. Module B_ISERDESE2(DATA_WIDTH=32'sb01000,INTERFACE_TYPE="NETWORKING",IOBDELAY="IFD",NUM_CE=32'sb01) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 3. Module B_OSERDESE2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/iserdese2/iserdese2_002.vp" Line 3. Module B_ISERDESE2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 3. Module B_OSERDESE2(DATA_RATE_TQ="BUF",DATA_WIDTH=32'sb01000,SRVAL_OQ=1'b0,SRVAL_TQ=1'b0,TRISTATE_WIDTH=32'sb01) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 3. Module B_OSERDESE2(DATA_WIDTH=32'sb01010,SRVAL_OQ=1'b0,SRVAL_TQ=1'b0,TRISTATE_WIDTH=32'sb01) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 3. Module B_OSERDESE2(DATA_WIDTH=32'sb01010,SERDES_MODE="SLAVE",SRVAL_OQ=1'b0,SRVAL_TQ=1'b0,TRISTATE_WIDTH=32'sb01) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/iserdese2/iserdese2_002.vp" Line 3. Module B_ISERDESE2(DATA_WIDTH=32'sb01000,INTERFACE_TYPE="NETWORKING",IOBDELAY="IFD",NUM_CE=32'sb01) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 3. Module B_OSERDESE2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/iserdese2/iserdese2_002.vp" Line 3. Module B_ISERDESE2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 3. Module B_OSERDESE2(DATA_RATE_TQ="BUF",DATA_WIDTH=32'sb01000,SRVAL_OQ=1'b0,SRVAL_TQ=1'b0,TRISTATE_WIDTH=32'sb01) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 3. Module B_OSERDESE2(DATA_WIDTH=32'sb01010,SRVAL_OQ=1'b0,SRVAL_TQ=1'b0,TRISTATE_WIDTH=32'sb01) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 3. Module B_OSERDESE2(DATA_WIDTH=32'sb01010,SERDES_MODE="SLAVE",SRVAL_OQ=1'b0,SRVAL_TQ=1'b0,TRISTATE_WIDTH=32'sb01) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/iserdese2/iserdese2_002.vp" Line 3. Module B_ISERDESE2(DATA_WIDTH=32'sb01000,INTERFACE_TYPE="NETWORKING",IOBDELAY="IFD",NUM_CE=32'sb01) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/oserdese2/oserdese2_002.vp" Line 3. Module B_OSERDESE2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/secureip/iserdese2/iserdese2_002.vp" Line 3. Module B_ISERDESE2 has a timescale but at least one module in design doesn't have timescale.
+INFO: [Common 17-14] Message 'XSIM 43-4100' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IDELAYCTRL_default
+Compiling secureip modules ...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="BUF",DAT...
+Compiling module unisims_ver.OBUFDS

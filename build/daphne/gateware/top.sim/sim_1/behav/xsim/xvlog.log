@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mam/fpga/linux/litex/litex/soc/cores/cpu/vexriscv/verilog/VexRiscv_Linux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionCache
+INFO: [VRFC 10-311] analyzing module DataCache
+INFO: [VRFC 10-311] analyzing module VexRiscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mam/fpga/linux/daphne/build/daphne/gateware/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-986] literal value truncated to fit in 6 bits [/home/mam/fpga/linux/daphne/build/daphne/gateware/top.v:2993]
+WARNING: [VRFC 10-986] literal value truncated to fit in 6 bits [/home/mam/fpga/linux/daphne/build/daphne/gateware/top.v:3015]
+WARNING: [VRFC 10-986] literal value truncated to fit in 6 bits [/home/mam/fpga/linux/daphne/build/daphne/gateware/top.v:3037]
+WARNING: [VRFC 10-986] literal value truncated to fit in 6 bits [/home/mam/fpga/linux/daphne/build/daphne/gateware/top.v:10895]
+WARNING: [VRFC 10-986] literal value truncated to fit in 6 bits [/home/mam/fpga/linux/daphne/build/daphne/gateware/top.v:10910]
+WARNING: [VRFC 10-986] literal value truncated to fit in 6 bits [/home/mam/fpga/linux/daphne/build/daphne/gateware/top.v:10925]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mam/fpga/linux/daphne/build/daphne/gateware/top.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
