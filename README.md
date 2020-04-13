@@ -1,12 +1,10 @@
-# DAPHnE Firmware
-firmware for the DAPHnE Board that digitizes signals from ARAPUCAS in the far detector at DUNE experiment in FERMILAB
+# DAPHNE
+DAPHNE (Detector Electronic for Acquiring Photons from Neutrinos) is an instrumentation module for the PDS (Photon Detection System) at DUNE experiment in FERMILAB. DAPHNE is designed to digitize the analog signals coming from the Photon Detection Sensors of the Single Phase in the Cold Electronics side of the TPC. DAPHNE is the first instrumentation module after the TPC interface, on the warm side. 
 
 > **Note:** Tested on Debian 10
 
 ## Intro:
-In this repository, we experiment running dedicated digital modules with a bare-bones [VexRiscv](https://github.com/SpinalHDL/VexRiscv) CPU, a 32-bits Linux Capable RISC-V CPU written in Spinal HDL. The Firmware is created around the VexRiscv CPU using LiteX as the SoC builder and special cores written in Migen Python DSL (LiteADS, LiteDRAM, LiteEth).
-
-This project demonstrates **how high level HDLs (Spinal HDL, Migen) enable new possibilities and complement each other**. Results shown here are the results of a productive collaboration between open-source communities.
+In this repository, we experiment running dedicated digital modules with a bare-bones [LiteX](https://github.com/enjoy-digital/litex) as the SoC builder and special cores written in Migen (LiteADS, LiteDRAM, LiteEth).
 
 ## Main Scheme
 [![scheme](DAPHNE.png)
@@ -27,15 +25,12 @@ $ sudo ./litex_setup.py init install
 ```
 [RiscV]()
 ```sh
-$ wget https://static.dev.sifive.com/dev-tools/riscv64-unknown-elf-gcc-8.1.0-2019.01.0-x86_64-linux-ubuntu14.tar.gz
-$ tar -xvf riscv64-unknown-elf-gcc-8.1.0-2019.01.0-x86_64-linux-ubuntu14.tar.gz
-$ export PATH=$PATH:$PWD/riscv64-unknown-elf-gcc-8.1.0-2019.01.0-x86_64-linux-ubuntu14/bin/
-```
+$ sudo ./litex_setup.py gcc
 
-### Load the FPGA bitstream
-To load the bitstream to you board, run:
+### Build
+To build the bitstream of you board, run:
 ```sh
-$ ./make.py --board=daphne --load
+$ ./make.py --board=daphne --build
 ```
 
 ### Load the Linux images over Serial
